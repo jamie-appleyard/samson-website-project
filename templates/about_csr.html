@@ -1,0 +1,50 @@
+{% extends '_sisterbase.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid about-header">
+    <h1 class="about-header-text">About Samson</h1>
+    <img src="{% static 'images/Compressed/Photo_29_Compressed.jpg' %}" alt="about-logo" class="about-img">
+</div>
+
+<div class="page-div">
+    <div class="about-nav" id="whoweare-sel">
+        <a href="{% url 'about_us' %}">
+            <h3>About Us</h3>
+        </a>
+    </div>
+    <div class="about-nav" id="quality-sel">
+        <a href="{% url 'about_quality' %}"><h3>Quality</h3></a>
+    </div>
+    <div class="about-nav" id="accreditation-sel">
+        <a href="{% url 'about_accreditation' %}"><h3>Accreditation</h3></a>
+    </div>
+    <div class="about-nav" id="csr-sel">
+        <a href="#csr"><h3>CSR</h3></a>
+    </div>
+</div>
+
+<div class="about-content-block container-fluid" id="csr">
+    <h1>Corporate Social Responsibility</h1>
+    <div class="about-underline"></div>
+    <div class="row bb">
+        <div class="col-12 col-sm-12 sol-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="accreditation-image-container">
+                <img src="{% static 'images/Rainbow.png' %}" alt="CSR Image" class="accreditation-image">
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 sol-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="bb-tl-text margin-auto">
+                <h3>Since moving in to our new HQ in Wavertree we have began opening the space to the local community. With cooking classes for
+                    children on Wednesdays and Fridays and a number of planned community and charitable initiatives such as our partnership with
+                    the armed forces covenant, we aim to have the gold award by the end of 2022. We allow veterans charities to use our space to 
+                    meet with ex-forces members to help them transition in to work and recieve financial, welfare and housing support. We engage
+                    our community of staff to commit to charitable causes and bring the team together to overcome challanges for charity.
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

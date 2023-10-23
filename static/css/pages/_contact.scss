@@ -1,0 +1,217 @@
+.contact-container {
+    height: fit-content;
+    margin-top: $nav-height;
+    padding: 0px;
+}
+
+.contact-image {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact-image > img {
+    width: 100%;
+}
+
+.contact-image-title {
+    position: absolute;
+    z-index: 5;
+    top: 10%;
+    width: 100%;
+    height: fit-content
+}
+
+.contact-image-title > h1 {
+    @include default-font;
+    font-size: 7rem;
+    color: $background;
+    text-align: center;
+}
+
+.contact-form {
+    position: absolute;
+    top: 58vh;
+    width: 100%;
+}
+
+.contact-form-side {
+    padding: 1rem;
+    width: fit-content;
+    // position: absolute;
+    // top: 58vh;
+    background-color: $background;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 0px $shadow;
+    z-index: 3;
+    transition: box-shadow 0.5s linear;
+}
+
+.contact-form-side:hover {
+    box-shadow: 0px 0px 20px 0px $professional_services;
+}
+
+.contact-form-side > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: $font_dark;
+    text-align: center;
+}
+
+.contact-underline {
+    border-bottom: 3px solid $red_highlight;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.contact-form-side > h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: $font_dark;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contact-form-side > form {
+    margin-top: 2rem;
+}
+
+.contact-form-side > form > div > label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $font_dark;
+}
+
+.contact-form-side > form > div > div > input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $font_dark;
+}
+
+.contact-form-side > form > div > div > textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $font_dark;
+}
+
+.address-side {
+    padding-top: 60vh;
+}
+
+.address-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: $font_dark;
+}
+
+.address-card {
+    height: fit-content;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px $shadow;
+    padding: 0px;
+    margin: 0px;
+    width: 30%;
+    transition: box-shadow 0.5s linear;
+}
+
+.address-card:hover {
+    box-shadow: 0px 0px 20px 0px $professional_services;
+}
+
+.ad-crd-img {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ad-crd-img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.ad-crd-ad {
+    margin-top: 0px;
+    border-top: 5px solid $red_highlight;
+    padding: 2rem;
+}
+
+.ad-crd-ad > h3 {
+    @include default-font;
+    font-size: 2.5rem;
+}
+
+.ad-crd-ad > h5 {
+    @include default-font;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 8%;
+}
+
+.ad-crd-ad > p {
+    @include default-font;
+    font-size: 1.75rem;
+    color: $red_highlight;
+    text-align: right;
+}
+
+.enq-btn-sm {
+    display:block;
+}
+
+.enq-btn-lg {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .contact-image > img {
+        height: 100%;
+    }
+    .address-side {
+        padding-top: 45vh;
+    }
+    .address-card {
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .address-side {
+        padding-top: 75vh;
+    }
+    .enq-btn-sm {
+        display:none;
+    }
+    .enq-btn-lg {
+        display: block;
+    }
+    .address-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .address-side {
+        padding-top: 95vh;
+    }
+    .contact-image-title > h1 {
+        font-size: 4rem;
+    }
+    .contact-image {
+        height: 40vh;
+    }
+}

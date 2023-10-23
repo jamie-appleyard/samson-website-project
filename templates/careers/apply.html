@@ -1,0 +1,68 @@
+{% extends '_sisterbase.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="contianer-fluid apply-header">
+    <div class="apply-header-image">
+        <img src="{% static 'images/portallogo.jpg' %}" alt="apply-header-image" class="apply-image image-darken">
+    </div>
+    <div class="apply-header-text">
+        <h1 class="apply-text">Find out more and apply for the {{ career.job_title }} job with Samson.</h1>
+    </div>
+</div>
+
+<div class="container-fluid career-detail">
+    <div class="row justify-content-around">
+        <div class="col-12 col-sm-12 col-md-6 detail-col">
+            <div class="detail-con">
+                <div class="detail-title">
+                    <h5>The Details</h5>
+                </div>
+                <div class="c-detail-text">
+                    <h5>{{ career.job_title }}</h5>
+                    <p>Job Summary: {{ career.job_summary }}</p>
+                    <p>Job Description: {{ career.job_description }}</p>
+                    <p>Rate of Pay:{{ career.rate_of_pay}}</p>
+                    <p>Location: {{ career.job_location }}</p>
+                    <p>Average Weekly Hours:{{ job_average_weekly_hours }}</p>
+                    <p>Number of Positions Available: {{ career.job_number_of_positions }}</p>
+                    <p>Apply By:{{ job_apply_by_date }}</p>
+                    <p>Date Posted: {{ job_date_posted }}</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 training-col">
+            <div class="training-con">
+                <div class="c-training-title">
+                    <h5>Additonal Information</h5>
+                </div>
+                <div class="c-training-text">
+                    <h5>{{ career.job_title }}</h5>
+                    <p>Some info about training and maybe need to know information/disclaimers about application and vetting</p>
+                    <p>Samson aim to accomodate our staff as best as possible, when you begin your career wiht us you will be expected
+                        to improve upon your skills by using our online training programs, accessing our training centre and working with other skilled
+                        security practitioners.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    {% crispy form %}
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12 application-submitted">
+            <h3>Your Application was successfully submitted, thank you for applying, we will call to arrange an interview if your application is successful.</h3>
+        </div>
+        <div class="col-12 application-failed">
+            <h3>Your Application failed to submit, please check above.</h3>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

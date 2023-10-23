@@ -1,0 +1,24 @@
+{% for article in articles %}
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-4 col-xxl-4 news-wrapper">
+        <div class=" news-page mt-3">
+            <a href="{% url 'article' article.id %}">
+                <div class="news-image-container">
+                    <img src="{{ article.image_main.url }}" alt="Career Image" class="news-image">
+                </div>
+                <div class="news-info">
+                    <div class="news-title text-center">
+                        <h4>{{ article.title }}</h4>
+                    </div>
+                    <div class="news-sub">
+                        <p>{{ article.heading }}</p>
+                    </div>
+                </div>
+                <div class="mob-news-info">
+                    <div class="mob-news-title text-center">
+                        <h4>{{ article.title }}</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+{% endfor %}

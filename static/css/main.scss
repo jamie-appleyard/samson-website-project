@@ -1,0 +1,44 @@
+@use 'sass:math';
+@use 'sass:color';
+
+@import "globals/variables";
+@import "globals/colors";
+@import "globals/mixins";
+
+@import "components/navbar";
+@import "components/bg-video";
+@import "components/carousel";
+@import "components/service-widget-module";
+@import "components/q_a";
+@import "components/_about-module";
+@import "components/news-module";
+@import "components/careers-module";
+@import "components/footer";
+
+@import "pages/_solution";
+@import "pages/news";
+@import "pages/article";
+@import "pages/about";
+@import "pages/careers";
+@import "pages/apply";
+@import "pages/contact";
+@import "pages/accounts";
+
+.module-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    font-style: normal;
+    color: $font_dark;
+    margin-left: 2vw;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.module-number {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: 200;
+    font-style: normal;
+    color: $red_highlight;
+}

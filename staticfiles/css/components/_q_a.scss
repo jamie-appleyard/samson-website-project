@@ -1,0 +1,61 @@
+.q-a-container {
+    height:50vh;
+    background: $nuetral_red;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+.help-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    font-style: normal;
+    color: $background;
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.lead-in {
+    margin-left:5vw;
+    margin-top:0.5rem;
+}
+
+.lead-in-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-style: normal;
+    color: $background;
+    font-size: 2.5rem;
+}
+
+.drop-box {
+    background: color.adjust($red_background, $lightness: +6%);
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    font-style: normal;
+    color: $background;
+    font-size: 2.5rem;
+    width:70vw;
+    padding-left: 1rem;
+}
+
+.drop-box:hover {
+    background: color.adjust($red_background, $lightness: +10%);
+}
+
+.dropdown-menu {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    transform:translateX(0px)!important;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 20px;
+    top:10px;
+}
+
+.dropdown-toggle::after {
+    display:none;
+}

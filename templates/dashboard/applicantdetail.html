@@ -1,0 +1,102 @@
+{% extends '_dashbase.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-6 border border-dark p-3">
+            <h2>{{ applicant.first_name }} {{ applicant.last_name }}</h2>
+            <h3>{{ applicant.mobile_number }}</h2>
+            <h3>{{ applicant.email_address }}</h2>
+        </div>
+        <div class="col-6 border border-dark p-3">
+            <div class="row">
+                <div class="col-6">
+                    {% if applicant.criminal_offences == True %}
+                        <p class="lead">Criminal Offences: <i class="fas fa-question text-warning"></i></p>
+                    {% else %}
+                        <p class="lead">Criminal Offences: <i class="fas fa-times-circle text-success"></i></p>
+                    {% endif %}
+                </div>
+                <div class="col-6">
+                    {% if applicant.uk_bank_account == True %}                   
+                        <p class="lead">UK Bank Account: <i class="fas fa-check-circle text-success"></i></p>
+                    {% else %}
+                        <p class="lead">UK Bank Account: <i class="fas fa-times-circle text-danger"></i></p>
+                    {% endif %}
+                </div>
+                <div class="col-6">
+                    {% if applicant.over_18 == True %}                   
+                        <p class="lead">Over 18: <i class="fas fa-check-circle text-success"></i></p>
+                    {% else %}
+                        <p class="lead">Over 18:<i class="fas fa-times-circle text-danger"></i></p>
+                    {% endif %}
+                </div>
+                <div class="col-6">
+                    {% if applicant.address_history == True %}                   
+                        <p class="lead">Address History: <i class="fas fa-check-circle text-success"></i></p>
+                    {% else %}
+                        <p class="lead">Address History: <i class="fas fa-times-circle text-danger"></i></p>
+                    {% endif %}
+                </div>
+                <div class="col-6">
+                    {% if applicant.work_history == True %}                   
+                        <p class="lead">Work History: <i class="fas fa-check-circle text-success"></i></p>
+                    {% else %}
+                        <p class="lead">Work History: <i class="fas fa-times-circle text-danger"></i></p>
+                    {% endif %}
+                </div>
+                <div class="col-6">
+                    {% if applicant.right_to_work == True %}                   
+                        <p class="lead">Right To Work: <i class="fas fa-check-circle text-success"></i></p>
+                    {% else %}
+                        <p class="lead">Right To Work: <i class="fas fa-times-circle text-danger"></i></p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 border border-dark p-3">
+            <p class="lead">{{ applicant.first_line }}, {{ applicant.second_line }}, {{ applicant.town }}, {{ aoplicant.county }}, {{ applicant.postcode }}</p>
+        </div>
+        <div class="col-6 border border-dark p-3">
+            <div class="row">
+                <div class="col-12">
+                    {% if applicant.sia_badge == True %}                   
+                        <p class="lead">SIA Badge: <i class="fas fa-check-circle text-success"></i></p>
+                    {% else %}
+                        <p class="lead">SIA Badge: <i class="fas fa-times-circle text-danger"></i></p>
+                    {% endif %}
+                </div>
+                <div class="col-12">
+                    <p class="lead">{{ applicant.sia_badges }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 border border-dark p-3">
+            <div class="row">
+                <div class="col-12">
+                    <p class="lead">Group 'A' Identification: {{ applicant.group_a }}</p>
+                </div>
+                <div class="col-12">
+                    <p class="lead">Group 'B' Identification: {{ applicant.group_b }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 border border-dark p-3">
+            {% if applicant.cv %}
+                <button class="btn btn-md btn-success">Download CV</button>
+            {% else %}
+                <button class="btn btn-md btn-danger">No CV Uploaded</button>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

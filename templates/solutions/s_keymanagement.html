@@ -1,0 +1,316 @@
+{% extends '_sisterbase.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid solution-overview-container">
+    <div class="row overview-row">
+        <div class="col-6 overview">
+            <h1 class="overview-title">Key Holding</h1>
+            <h2 class="overview-statement">Remote Protection 24/7</h2>
+            <h5 class="overview-description mt-3">In order to provide a secure key holding service that goes above and beyond that of the statutory 
+                requirements, we are proud to have invested in one of the world’s most superior electronic key cabinets, ‘MORSE Watchmans’.
+            Enquire today to speak to an expert about how we can keep you and your buildings safe.</h5>
+        </div>
+        <div class="col-6 overview-image-section">
+            <img src="{% static 'images/Website_Images/Frontline.png' %}" alt="Guarding Image" class="overview-image">
+        </div>
+    </div>
+    <div class="row lap-overview-row">
+        <div class="col-12 overview">
+            <h1 class="overview-title">Key Management</h1>
+            <h2 class="overview-statement">Remote Protection 24/7</h2>
+            <h5 class="overview-description mt-3">In order to provide a secure key holding service that goes above and beyond that of the statutory 
+                requirements, we are proud to have invested in one of the world’s most superior electronic key cabinets, ‘MORSE Watchmans’.
+                Enquire today to speak to an expert about how we can keep you and your buildings safe.</h5>
+            <img src="{% static 'images/Website_Images/Frontline.png' %}" alt="Guarding Image" class="lap-overview-image">
+        </div>
+    </div>
+    <div class="row mob-overview-row">
+        <div class="col-12 mob-overview-image-section">
+            <img src="{% static 'images/Website_Images/Frontline.png' %}" alt="Guarding Image" class="mob-overview-image">
+        </div>
+        <div class="col-12 mob-overview">
+            <h1 class="mob-overview-title">Key Management</h1>
+            <h2 class="mob-overview-statement">Remote Protection 24/7</h2>
+            <h5 class="mob-overview-description mt-3">In order to provide a secure key holding service that goes above and beyond that of the statutory 
+                requirements, we are proud to have invested in one of the world’s most superior electronic key cabinets, ‘MORSE Watchmans’.
+                Enquire today to speak to an expert about how we can keep you and your buildings safe.</h5>
+        </div>
+    </div>
+</div>
+
+<div class="container creds-carousel">
+    <div class="creds-container">
+        <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SASELISC04">
+            <img src="{% static 'images/creds 2/siaac.png' %}" alt="accreditation" class="cred">
+        </a>
+        <img src="{% static 'images/creds 2/sfms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sca.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/nhssbs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtfdas.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtarc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crt9001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdias.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdce.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdcctv.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdacs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crd14001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+        <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SASELISC04">
+            <img src="{% static 'images/creds 2/siaac.png' %}" alt="accreditation" class="cred">
+        </a>
+        <img src="{% static 'images/creds 2/BAFE-logo.jpg' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sca.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/nhssbs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtfdas.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtarc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crt9001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdias.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdce.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdcctv.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdacs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crd14001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+        <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SASELISC04">
+            <img src="{% static 'images/creds 2/siaac.png' %}" alt="accreditation" class="cred">
+        </a>
+        <img src="{% static 'images/creds 2/BAFE-logo.jpg' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sfms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sca.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/nhssbs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtfdas.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtarc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crt9001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdias.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdce.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdcctv.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdacs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crd14001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+        <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SASELISC04">
+            <img src="{% static 'images/creds 2/siaac.png' %}" alt="accreditation" class="cred">
+        </a>
+        <img src="{% static 'images/creds 2/BAFE-logo.jpg' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sfms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sca.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/nhssbs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtfdas.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtarc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crt9001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdias.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdce.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdcctv.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdacs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crd14001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+    </div>
+</div>
+</div>
+
+
+<div class="container-fluid single-service-block-left sol_key_bg_l">
+    <div class="row ssb-row">
+        <div class="col-sm-12 col-md-6 ssb-image-side">
+            <div class="ssb-image-container">
+                <img src="{% static 'images/New_Website_Images/Keypad.png' %}" alt="Monitoring Image" class="ssb-image">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 ssb-text-side text-center">
+            <div class="ssb-text-container">
+                <h3 class="ssb-title">Key Watcher</h3>
+                <div class="ssb-title-underline"></div>
+                <h5 class="ssb-text">Housed within our maximum security Remote Video Response Centre, aka ‘The Vaults’, 
+                    our pioneering key holding facilities offers an additional safeguard measure to all of our clients.
+                    Unlike traditional methods whereby keys are stored in a filing cabinet or on wall hooks for example, our innovative system certifies total accountability and regulation over our clients’ keys.</h5>
+                <a class="ssb-link-left" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid single-service-block-right sol_key_bg_r">
+    <div class="row ssb-row">
+        <div class="col-sm-12 col-md-6 ssb-text-side text-center">
+            <div class="ssb-text-container">
+                <h3 class="ssb-title">Storage</h3>
+                <div class="ssb-title-underline"></div>
+                <h5 class="ssb-text">Keys are kept safe and secure inside a 'MORSE Watchman' an alarmed key containment
+                    facility within the security of the Vaults. Many companies still leave keys with trusted
+                    members of staff however this can often lead to theft, loss and being unable to open in the morning.
+                </h5>
+                <a class="ssb-link-right" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 ssb-image-side">
+            <div class="ssb-image-container">
+                <img src="{% static 'images/New_Website_Images/Keyholding.png' %}" alt="Guarding Image" class="ssb-image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid single-service-block-left sol_key_bg_l">
+    <div class="row ssb-row">
+        <div class="col-sm-12 col-md-6 ssb-image-side">
+            <div class="ssb-image-container">
+                <img src="{% static 'images/New_Website_Images/Locking.png' %}" alt="Guarding Image" class="ssb-image">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 ssb-text-side text-center">
+            <div class="ssb-text-container">
+                <h3 class="ssb-title">Lock / Unlock</h3>
+                <div class="ssb-title-underline"></div>
+                <h5 class="ssb-text">Those wanting a physical presence when locking up can opt to appoint a mobile supervisor to visit the site 
+                    at the end of the day to ensure that the building has been vacated prior to securing the site. During this time 
+                    the supervisor will patrol, ensuring that all windows and doors are closed and any unnecessary electrical 
+                    equipment is switched off. They will then set the security alarm, lock all doors and leave before returning the following morning to 
+                    open the premises ahead of the arrival of staff members. </h5>
+                <a class="ssb-link-left" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container client-carousel">
+    <div class="client-container">
+        <img src="{% static 'images/Cli_logo/Ambition - Sefton.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Associates of Cape Cod.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/B_M.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Blackburne House.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Broughton Hall HS.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Cardinal Heenan HS.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Chavasse Court Chambers.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Clarke Energy.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Goodman Grant.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/James Murray.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Kirkby Signs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Life Rooms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Life Science.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Marshall Property.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Mersey Care.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Mersey Youth Association.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/North Liv Academy.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/SUEZ.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Trak.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Ambition - Sefton.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Associates of Cape Cod.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/B_M.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Blackburne House.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Broughton Hall HS.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Cardinal Heenan HS.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Chavasse Court Chambers.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Clarke Energy.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Cobalt House.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Goodman Grant.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/James Murray.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Kirkby Signs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Lakeside School.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Life Rooms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Life Science.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Marshall Property.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Mersey Youth Association.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/North Liv Academy.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Bord na Mona.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Potter Space.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Northwood.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/LCP.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Triton.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Betsi Cadwaller.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Knowsley Council.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Birmingham City Council.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/NHS Warrington.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/NHS Southport _ Ormskirk.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/NHS Property Services.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Liverpool City Council.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/NHS Bolton.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/CHP.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Mersey Care.png' %}" alt="accreditation" class="cred">
+    </div>
+</div>
+
+<div class="enquiry-container" id="Enquire">
+    <div class="row justify-content-around">
+        <div class="col-sm-12 col-md-6 enquiry-form">
+            <form method="post" class="pt-5" id="enquiryForm">
+                <h1 class="pb-4 text-center"> Leave us a message and let us know how we can help you, one of our experts be in touch to discuss your requirements.</h1>
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="button-result">
+                    <button type="submit" class="btn btn-lg btn-primary mt-4 mb-4" id="enquirySubmit">Submit</button><div class="success-display">Enquiry received ! We will be in touch soon.</div><div class="failed-display">Enquiry failed, please try again or give us a call.</div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-6 service-options">
+            <div class=" col-12 col-xs-12 col-sm-5 col-md-12 col-lg-12">
+                <div class="serv-banner">
+                    <a href="{% url 's_guards' %}">
+                        <img src="{% static 'images/Widgets/Service Banners/Guarding banner.png' %}" alt="guarding" class="banner">
+                    </a>
+                </div>
+                <div class="serv-banner">
+                    <a href="{% url 's_monitoring' %}">
+                        <img src="{% static 'images/Widgets/Service Banners/Minitoring banner.png' %}" alt="guarding" class="banner">
+                    </a>
+                </div>
+                <div class="serv-banner">
+                    <a href="{% url 's_keymanagement' %}">
+                        <img src="{% static 'images/Widgets/Service Banners/Key Managment banner.png' %}" alt="guarding" class="banner">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-5 col-md-12 col-lg-12">
+                <div class="serv-banner">
+                    <a href="{% url 's_engineering' %}">
+                        <img src="{% static 'images/Widgets/Service Banners/Engineering banner.png' %}" alt="guarding" class="banner">
+                    </a>
+                </div>
+                <div class="serv-banner">
+                    <a href="{% url 's_helpdesk' %}">
+                        <img src="{% static 'images/Widgets/Service Banners/Helpdesk banner.png' %}" alt="guarding" class="banner">
+                    </a>
+                </div>
+                <div class="serv-banner">
+                    <a href="{% url 's_professional' %}">
+                        <img src="{% static 'images/Widgets/Service Banners/Professional banner.png' %}" alt="guarding" class="banner">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid new-news">
+    <div class="row news-row justify-content-around">
+        {% for article in articles %}
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-4 col-xxl-4 news-wrapper">
+                <div class="news">
+                    <a href="{% url 'article' article.id %}">
+                        <div class="news-image-container">
+                            <img src="{{ article.image_main.url }}" alt="Career Image" class="news-image">
+                        </div>
+                        <div class="news-info">
+                            <div class="news-title text-center">
+                                <h4>{{ article.title }}</h4>
+                            </div>
+                            <div class="news-sub">
+                                <p>{{ article.heading }}</p>
+                            </div>
+                        </div>
+                        <div class="mob-news-info">
+                            <div class="mob-news-title text-center">
+                                <h4>{{ article.title }}</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="news-link text-center">
+        <a href="{% url 'news' %}">See more content <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+
+{% endblock content %}

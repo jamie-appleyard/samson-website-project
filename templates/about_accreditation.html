@@ -1,0 +1,48 @@
+{% extends '_sisterbase.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid about-header">
+    <h1 class="about-header-text">About Samson</h1>
+    <img src="{% static 'images/Compressed/Photo_29_Compressed.jpg' %}" alt="about-logo" class="about-img">
+</div>
+
+<div class="page-div">
+    <div class="about-nav" id="whoweare-sel">
+        <a href="{% url 'about_us' %}">
+            <h3>About Us</h3>
+        </a>
+    </div>
+    <div class="about-nav" id="quality-sel">
+        <a href="{% url 'about_quality' %}"><h3>Quality</h3></a>
+    </div>
+    <div class="about-nav" id="accreditation-sel">
+        <a href="#accreditation"><h3>Accreditation</h3></a>
+    </div>
+    <div class="about-nav" id="csr-sel">
+        <a href="{% url 'about_csr' %}"><h3>CSR</h3></a>
+    </div>
+</div>
+
+<div class="about-content-block container-fluid" id="accreditation">
+    <h1>Accreditation</h1>
+    <div class="about-underline"></div>
+    <div class="row bb">
+        <div class="col-12 col-sm-12 sol-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="accreditation-image-container">
+                <img src="{% static 'images/bigcreds.jpg' %}" alt="Accreditations" class="accreditation-image">
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 sol-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="bb-tl-text margin-auto">
+                <h3>The accrediations we hold prove to our clients that we hold the highest professional standard across all our
+                    facilities services. Giving you peace of mind that we adhere to the levels set by some of the most stringent auditing
+                    organisations across Security, Engineering, Cleaning and beyond.
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

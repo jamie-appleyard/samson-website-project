@@ -1,0 +1,82 @@
+{% extends '_sisterbase.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="samson-news">
+        <h1>New at Samson</h1>
+    </div>
+
+    <div class="featured-article container-fluid">
+        <div class="featured-img">
+            <img src="{{ featured.image_main.url }}" alt="featured-image" class="ft-img">
+        </div>
+        <div class="featured-dag">
+            <div class="feat btn btn-lg btn-danger"><i class="far fa-star"></i> Featured</div>
+            <div class="ft-content text-center">
+                <div class="ft-title">
+                    <h2>{{ featured.title }}</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="ft-text">
+                    <p>{{ featured.text }}
+                    </p>
+                </div>
+            </div>
+            <div class="ft-button">
+                <div class="btn btn-md btn-danger"><a href="{% url 'article' featured.id %}">READ</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mob-featured-article container-fluid">
+        <div class="row">
+            <div class="col-12 mfa-image">
+                <h3 class="mob-ft-t"><i class="far fa-star"></i>Featured</h3>
+                <img src="{{ featured.image_main.url }}" alt="featured-image" class="mob-ft-img">
+            </div>
+            <div class="col-12 mfa-text">
+                <h1>{{ featured.title }}</h1>
+                <div class="underline"></div>
+                <div class="mob-ft-text">
+                    <p>{{ featured.text }}
+                    </p>
+                </div>
+                <div class="btn btn-md btn-danger mob-read-button"><a class="ft-link" href="{% url 'article' featured.id %}">READ</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid prev-news">
+        <div class="row prev-news-row justify-content-around">
+            {% for article in articles %}
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-4 col-xxl-4 news-wrapper">
+                    <div class=" news-page mt-3">
+                        <a href="{% url 'article' article.id %}">
+                            <div class="news-image-container">
+                                <img src="{{ article.image_main.url }}" alt="Career Image" class="news-image">
+                            </div>
+                            <div class="news-info">
+                                <div class="news-title text-center">
+                                    <h4>{{ article.title }}</h4>
+                                </div>
+                                <div class="news-sub">
+                                    <p>{{ article.heading }}</p>
+                                </div>
+                            </div>
+                            <div class="mob-news-info">
+                                <div class="mob-news-title text-center">
+                                    <h4>{{ article.title }}</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <button class="btn btn-lg btn-primary load-more-button" data-total="{{ data_total }}" data-limit="3">See more</button>
+        </div>
+    </div>
+
+{% endblock content %}

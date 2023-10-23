@@ -1,0 +1,97 @@
+{% extends '_sisterbase.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid about-header">
+    <h1 class="about-header-text">About Samson</h1>
+    <img src="{% static 'images/Compressed/Photo_29_Compressed.jpg' %}" alt="about-logo" class="about-img">
+</div>
+
+<div class="page-div">
+    <div class="about-nav" id="whoweare-sel">
+        <a href="#whoweare">
+            <h3>About Us</h3>
+        </a>
+    </div>
+    <div class="about-nav" id="quality-sel">
+        <a href="{% url 'about_quality' %}">
+            <h3>Quality</h3>
+        </a>
+    </div>
+    <div class="about-nav" id="accreditation-sel">
+        <a href="{% url 'about_accreditation' %}"><h3>Accreditation</h3></a>
+    </div>
+    <div class="about-nav" id="csr-sel">
+        <a href="{% url 'about_csr' %}"><h3>CSR</h3></a>
+    </div>
+</div>
+
+<div class="about-content-block container-fluid" id="whoweare" style="display: block">
+    <h1>Who we are</h1>
+    <div class="about-underline"></div>
+    <div class="bb-text-left container-fluid">
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="bb-center-text">
+                    <h3>Combining state-of-the-art technology with fully qualified staff members of high calibre, Samson Security Fire & Facilities is Merseyside’s
+                         only privately owned monitoring station, which offers an extensive range of security and facilities management services.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row bb">
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6 mob-bb-img">
+                <div class="bb-image">
+                    <img src="{% static 'images/Website_Images/Samson_Building_Compressed.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="bb-tl-text">
+                    <h3>Renowned for delivering a level of protection that is second-to-none, we pride ourselves on our tailored and flexible approach to ensure that all of your security needs are covered.
+                        Whether you want to safeguard your business or home, we are able to provide you with a professional integrated security service to cover all of your requirements.
+                    </h3>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6 dt-bb-img">
+                <div class="bb-image">
+                    <img src="{% static 'images/Website_Images/Samson_Building_Compressed.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+        </div>
+        <div class="row bb">
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="bb-image">
+                    <img src="{% static 'images/Compressed/Photo_31_Compressed.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="bb-tl-text">
+                    <h3>To ensure that you receive only the best customer satisfaction, we carry out every job to an unsurpassed standard. All of our staff members are heavily regulated, and therefore undergo frequent regulation checks and training programmes. By doing so this allows us to maintain our brand reputation, in addition to our Security Industry Authority (SIA) approved contractor status. 
+                        In order to cover all areas of security care, we provide an extensive portfolio of forward-thinking solutions. 
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row bb">
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6 mob-bb-img">
+                <div class="bb-image">
+                    <img src="{% static 'images/Compressed/Photo_8_Compressed.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="bb-tl-text">
+                    <h3>From domestic clients to local independents and big name brands we are proud to work with such a varied array of people and businesses. As well as being responsible for the NHS’ National Framework, we have provided a range of services to recognised and esteemed brands 
+                        including Clarke Energy, Toyota, Premier League, Avon Estates and Liverpool City Council.
+                    </h3>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6 dt-bb-img">
+                <div class="bb-image">
+                    <img src="{% static 'images/Compressed/Photo_8_Compressed.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

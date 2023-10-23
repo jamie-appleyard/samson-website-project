@@ -1,0 +1,14 @@
+{% autoescape off %}
+
+Hi,
+
+We are currently taking {{ applicant }} through the vetting process and they have named you as an employer from {{ from_date }} to {{ to_date }}.
+
+Plase follow the below link to confirm this employment window. We will only ask you to confirm the dates they were employed and the form should take less than a minute to complete.
+
+http://{{ domain }}{% url 'employer_reference' job=job pk=applicant_id %}
+
+Thank for your time,
+
+Samson Security.
+{% endautoescape %}

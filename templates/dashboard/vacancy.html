@@ -1,0 +1,51 @@
+{% extends '_dashbase.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+    <div class="container my-5">
+        <div class="row border border-dark rounded">
+            <div class="col-6">
+                <h1>New Vacancy</h1>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button class="btn btn-lg btn-success" type="submit" value="Save">Submit</button>
+                </form>
+            </div>
+        </div>      
+    </div>
+    <div class="vacancies">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Summary</th>
+                <th scope="col">Description</th>
+                <th scope="col">Rate</th>
+                <th scope="col">Average Weekly Hours</th>
+                <th scope="col">Contract Type</th>
+                <th scope="col">Location</th>
+                <th scope="col">Number of Positions</th>
+                <th scope="col">Number of Applications</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for career in careers %}
+                <tr>
+                    <th>{{ career.job_title }}</th>
+                    <th>{{ career.job_summary }}</th>
+                    <th>{{ career.job_description }}</th>
+                    <th>{{ career.rate_of_pay }}</th>
+                    <th>{{ career.job_average_weekly_hours }}</th>
+                    <th>{{ career.job_contract_type }}</th>
+                    <th>{{ career.job_location }}</th>
+                    <th>{{ career.job_number_of_positions }}</th>
+                    <th>{{ career.number_of_applications }}</th>
+                    <th><a href="{% url 'applications' career.pk %}" class="btn btn-md btn-danger">View Applications</a></th>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}

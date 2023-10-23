@@ -1,0 +1,66 @@
+{% extends '_dashbase.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container" id="create_article">
+        <div class="row bg-success rounded mt-5">
+            <a href="{% url 'editor' %}">
+                <div class="col-12 text-light py-5">
+                    Create New Article <i class="fas fa-plus text-light"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="container" id="draft_articles">
+        <div class="row bg-warning rounded my-3">
+            <div class="col-12 text-light p-3">
+                Drafts <i class="fas fa-question text-light"></i>
+            </div>
+            {% for article in drafts %}
+                <div class="col-4 my-2">
+                    <div class="card">
+                        {% if article.image_main %}
+                            <img src="{{ article.image_main.url }}" alt="image" class="card-img-top">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class='card-title'>{{ article.title }}</h5>
+                            <p class="card-text">{{ article.heading }}</p>
+                            <form method="post">
+                                {% csrf_token %}
+                                <a href="{% url 'update' article.id %}" class="btn btn-sm btn-primary">Update</a>
+                                <button type="submit" class="btn btn-sm btn-success" name="draft_post" value="{{ article.id }}">Post</button>
+                                <button type="submit" class="btn btn-sm btn-danger" name="draft_delete" value="{{ article.id }}">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="container" id="previous_articles">
+        <div class="row bg-primary rounded my-3">
+            <div class="col-12 text-light p-3">
+                Previous Articles <i class="fas fa-arrow-right"></i>
+            </div>
+            {% for article in previous %}
+                <div class="col-4 my-2">
+                    <div class="card">
+                        {% if article.image_main %}
+                            <img src="{{ article.image_main.url }}" alt="image" class="card-img-top">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class='card-title'>{{ article.title }}</h5>
+                            <p class="card-text">{{ article.heading }}</p>
+                            <form method="post">
+                                {% csrf_token %}
+                                <a href="{% url 'update' article.id %}" class="btn btn-sm btn-primary mr-2" name="live_update" value="{{ article.id }}">Update</button>
+                                <a href="{% url 'article' article.id %}" class="btn btn-sm btn-success">View</a>
+                                <button type="submit" class="btn btn-sm btn-danger" name="live_delete" value="{{ article.id }}">Delete</button>  
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}

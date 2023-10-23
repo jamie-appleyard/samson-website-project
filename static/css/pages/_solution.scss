@@ -1,0 +1,802 @@
+.solution-overview-container {
+    margin-top: $nav-height;
+    box-shadow: 10px 0px 20px 10px $background inset;
+}
+
+$overview-height: 75vh;
+
+.overview-row {
+    height: $overview-height;
+    overflow:hidden;
+}
+
+.overview {
+    margin-top: math.div($overview-height, 6);
+    padding-left: 3rem;
+    position: relative;
+}
+
+.overview-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5em;
+    font-weight:400;
+    color: $font_dark;
+}
+
+.overview-statement {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    font-weight:300;
+    color: $font_dark;
+}
+
+.overview-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    font-weight:300;
+    color: $font_dark;
+    width: 90%;
+}
+
+.overview-image-section {
+    position: relative;
+}
+
+.overview-image {
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    left: -20%;
+}
+
+.cleaning-image {
+    width: 100%!important;
+    height: unset!important;
+}
+
+.single-service-block-left {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 65vh;
+    position: relative;
+    box-shadow: 8px 0px 8px 1px $shadow;
+}
+
+.ssb-row {
+    background: transparent;
+    height: 65vh;
+}
+
+.ssb-image-side {
+    padding: 2rem;
+    background: transparent;
+    height: 65vh;
+}
+
+.ssb-image-container {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height:95%;
+    overflow:hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 10px $background;
+}
+
+.ssb-image {
+    height: 100%;
+}
+
+.ssb-text-side {
+    padding: 1rem;
+    background: transparent;
+}
+
+.ssb-text-container {
+    position: relative;
+}
+
+.ssb-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-weight:400;
+    color: $font_dark;
+}
+
+.ssb-title-sm {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2em;
+    font-weight:400;
+    color: $font_dark;
+}
+
+.ssb-title-underline {
+    border-bottom: 3px solid $guarding;
+    width: 100%;
+}
+
+.ssb-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    font-weight:300;
+    padding-top: 1.6rem;
+    color: $font_dark;
+    margin-bottom: 1rem;
+}
+
+.ssb-text-sm {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight:300;
+    padding-top: 1.6rem;
+    color: $font_dark;
+    margin-bottom: 1rem;
+}
+
+.ssb-link-left {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight:400;
+    color: $font_dark;
+    text-decoration: none;
+}
+
+.ssb-link-left:hover {
+    color: $red_highlight;
+}
+
+.single-service-block-right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 65vh;
+    position: relative;
+    box-shadow: 8px 0px 8px 1px $shadow;
+}
+
+.single-service-block-left {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 65vh;
+    position: relative;
+    box-shadow: 8px 0px 8px 1px $shadow;
+}
+
+.ssb-link-right {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight:400;
+    color: $font_dark;
+    text-decoration: none;
+}
+
+.ssb-link-right:hover {
+    color: $red_highlight;
+}
+
+.service-carousel-right {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    height: 65vh;
+    position: relative;
+    background: linear-gradient(90deg, $background 30%, $guarding 80%);
+    box-shadow: 0px 0px 8px 1px $shadow;
+    // box-shadow: 0px 0px 11px 9px $background inset;
+}
+
+.service-carousel-left {
+    background: linear-gradient(90deg, $guarding 20%, $background 60%);
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    height: 65vh;
+    position: relative;
+    box-shadow: 0px 0px 8px 1px $shadow;
+}
+
+.sc-row {
+    background: transparent;
+    height: 65vh;
+}
+
+.sc-text-side {
+    padding: 2rem;
+    background: transparent;
+    position: relative;
+    height: 65vh;
+}
+
+.sc-text-container {
+    background-color: $background;
+    width: 95%;
+    height:95%;
+    // border: 2px solid $guarding;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px #e9ecef;
+}
+
+.sc-text-slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+
+.sc-text-slides::after {
+    top: 100%;
+}
+
+.sc-text-slide {
+    background-color: $background;
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+.sc-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.6em;
+    font-weight:400;
+    color: $font_dark;
+}
+
+.sc-title-sm {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight:400;
+    color: $font_dark;
+}
+
+.sc-title-underline {
+    border-bottom: 2px solid $guarding;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sc-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight:300;
+    padding-top: 0.5rem;
+    color: $font_dark;
+    margin-bottom: 1rem;
+}
+
+.sc-text-sm {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight:300;
+    padding-top: 0.5rem;
+    color: $font_dark;
+    margin-bottom: 1rem;
+}
+
+.sc-image-side {
+    padding: 2rem;
+    background: transparent;
+    height: 65vh;
+}
+
+.sc-image-container {
+    width: 95%;
+    height:95%;
+    overflow:hidden;
+    box-shadow: 0px 0px 20px 10px $background;
+    position: relative;
+    border-radius: 10px;
+}
+
+.sc-image-slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+
+.image-slide {
+    height:100%;
+    position: relative;
+}
+
+.sc-image {
+    height: 100%;
+    position: absolute;
+}
+
+.sc-link-right {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight:400;
+    color: $font_dark;
+    text-decoration: none;
+}
+
+.sc-link-right:hover {
+    color: $red_highlight;
+}
+
+.sc-controller {
+    position: absolute;
+    bottom: 35%;
+    left:46.5%;
+}
+
+.btn-prev {
+    background-color: $guarding;
+    border-radius: 50%;
+    color: $background;
+    font-size: 3rem;
+    width: 30%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btn-next {
+    background-color: $guarding;
+    border-radius: 50%;
+    color: $background;
+    font-size: 3rem;
+    width: 30%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sc-left {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.sc-right {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.creds-carousel {
+    height: 15vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    padding: 0px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.creds-container {
+    height: 100%;
+    width: max-content;
+    position: absolute;
+    left: -0%;
+}
+
+.client-carousel {
+    height: 15vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    padding: 0px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.client-container {
+    height: 100%;
+    width: max-content;
+    position: absolute;
+    right: -0%;
+}
+
+.cred {
+    height: 80%;
+    display: inline;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.enquiry-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: $nav-height;
+    margin-bottom: 4rem;
+
+}
+
+.enquiry-container > .row {
+    width: 100%;
+    // height: 120vh;
+}
+
+.enquiry-form {
+    width: 47%;
+}
+
+.enquiry-form > form {
+    width: 100%;
+    position: relative;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px $shadow;
+    border: 1.5px solid $red-background;
+}
+
+.enquiry-form > form > div > label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight:300;
+    color: $font_dark;
+}
+
+.enquiry-form > form > div > div > input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    font-weight:300;
+    color: $font_dark;
+}
+
+.enquiry-form > form > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight:300;
+    color: $font_dark;
+}
+
+.success-display {
+    background: lighten($green_highlight, 30%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    border: 3px solid $green_highlight;
+    border-radius: 10px;
+    height: fit-content;
+    align-self: center;
+    color: $font_dark;
+    padding: 0.5rem;
+    display: none;
+}
+
+.failed-display {
+    background: lighten($red_highlight, 30%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    border: 3px solid $red_highlight;
+    border-radius: 10px;
+    height: fit-content;
+    align-self: center;
+    color: $font_dark;
+    padding: 0.5rem;
+    display: none;
+}
+
+.button-result {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-options {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+}
+
+.serv-banner {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow .2s ease-in-out, height .2s ease-in-out, width .2s ease-in-out;
+}
+
+.serv-banner:hover {
+    box-shadow: 0px 0px 17px 10px $shadow;
+    height:32%;
+    width: 102.5%;
+}
+
+.banner {
+    width: 100%;
+    height: 100%; 
+}
+
+
+
+.sol_guarding_bg_l {
+    background: linear-gradient(90deg, $guarding 20%, $background 60%);
+}
+
+.sol_guarding_bg_r {
+    background: linear-gradient(90deg, $background 30%, $guarding 80%);
+}
+
+
+
+.sol_monitoring_bg_l {
+    background: linear-gradient(90deg, $monitoring 20%, $background 60%);
+}
+
+.sol_monitoring_bg_r {
+    background: linear-gradient(90deg, $background 30%, $monitoring 80%);
+}
+
+
+
+.sol_key_bg_l {
+    background: linear-gradient(90deg,$key_management 20%, $background 60%);
+}
+
+.sol_key_bg_r {
+    background: linear-gradient(90deg, $background 30%, $key_management 80%);
+}
+
+
+
+.sol_engineering_bg_l {
+    background: linear-gradient(90deg, $engineering 20%, $background 60%);
+}
+
+.sol_engineering_bg_r {
+    background: linear-gradient(90deg, $background 30%, $engineering 80%);
+}
+
+
+.sol_helpdesk_bg_l {
+    background: linear-gradient(90deg, $helpdesk 20%, $background 60%);
+}
+
+.sol_helpdesk_bg_r {
+    background: linear-gradient(90deg, $background 30%, $helpdesk 80%);
+}
+
+
+.sol_professional_bg_l {
+    background: linear-gradient(90deg, $professional_services 20%, $background 60%);
+}
+
+.sol_professional_bg_r {
+    background: linear-gradient(90deg, $background 30%, $professional_services 80%);
+}
+
+.mob-overview-row {
+    display: none;
+}
+
+.mob-overview-image {
+    width: 100%;
+}
+
+.mob-overview-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    font-weight:400;
+    color: $font_dark;
+}
+
+.mob-overview-statement {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight:300;
+    color: $font_dark;
+}
+
+.mob-overview-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight:300;
+    color: $font_dark;
+    width: 90%;
+}
+
+.lap-overview-row {
+    display: none;
+    height: 71vh;
+    overflow: hidden;
+}
+
+.lap-overview-image {
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    z-index: -1;
+}
+
+@media (max-width: 1270px) {
+    .overview-row {
+        height: 80vh
+    }
+}
+
+@media (max-width: 1200px) {
+    .overview-image {
+        right: -60%;
+    }
+    .overview-row {
+        height: 90vh; 
+    }
+    .overview {
+        margin-top: 6.5vh;
+    }
+    .ssb-text {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .sc-title {
+        font-size: 2.2em;
+    }
+    .sc-text {
+        font-size: 1.2em;
+    }
+    .lap-overview-row {
+        display: flex;
+    }
+    .overview-row {
+        display: none;
+    }
+    .overview-image {
+        right: -80%;
+    }
+    .sc-title {
+        font-size: 1.6em;
+    }
+    .enquiry-form > form > h1 {
+        font-size: 1.3em;
+    }
+    .ssb-text {
+        font-size: 1.2em;
+    }
+    .ssb-title {
+        font-size: 2.5em;
+    }
+    .overview-description {
+        text-shadow: $shadow;
+    }
+}
+
+@media (max-width: 768px) {
+    .sc-title {
+        font-size: 2em;
+    }
+    .sc-text {
+        font-size: 1em;
+    }
+    .lap-overview-row {
+        display: none;
+    }
+    .mob-overview-row {
+        display: block;
+    }
+    .enquiry-form {
+        width: inherit;
+    }
+    .service-options {
+        width: inherit;
+        margin-top: 4rem;
+        justify-content: space-around;
+        height: 20%;
+        flex-direction: unset;
+    }
+    .enquiry-form > form > h1 {
+        font-size: 2em;
+    }
+    .single-service-block-left {
+        height: 130vh;
+    }
+    .single-service-block-right {
+        height: 130vh;
+    }
+    .ssb-text-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+    .sc-controller {
+        display: flex;
+        bottom: 47%;
+        left: 30%;
+        flex-direction: row;
+        width: 30%;
+        justify-content: space-between;
+    }
+    .service-carousel-right {
+        height: 130vh;
+    }
+    .service-carousel-left {
+        height: 130vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-options {
+        width: inherit;
+        margin-top: 4rem;
+        justify-content: space-around;
+        height: 20%;
+        flex-direction: column;
+    }
+    .single-service-block-left {
+        height: 140vh;
+    }
+    .single-service-block-right {
+        height: 140vh;
+    }
+    .sc-controller {
+        display: flex;
+        bottom: 47%;
+        left: 25%;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 522px) {
+    .single-service-block-left {
+        height: 145vh;
+    }
+    .single-service-block-right {
+        height: 145vh;
+    }
+    .service-carousel-right {
+        height: 130vh;
+    }
+    .service-carousel-left {
+        height: 130vh;
+    }
+    .btn-prev {
+        width: 4.2rem;
+    }
+    .btn-next {
+        width: 4.2rem;
+    }
+    .sc-right {
+        margin-left: 25%;
+    }
+    .ssb-text-container {
+        position: relative;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 10px #ffffff;
+        padding: 2rem;
+    }
+    .ssb-text {
+        font-size: 1.1em;
+    }
+    .ssb-link-left {
+        font-size: 1em;
+    }
+    .ssb-link-right {
+        font-size: 1em;
+    }
+    .enquiry-container {
+        padding-top: 0rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .enquiry-form > form > h1 {
+        font-size: 1.2em;
+    }
+    .single-service-block-left {
+        height: 155vh;
+    }
+    .single-service-block-right {
+        height: 155vh;
+    }
+    .sc-title {
+        font-size: 1.2em;
+    }
+    .sc-link-right {
+        font-size: 1.2em;
+    }
+}

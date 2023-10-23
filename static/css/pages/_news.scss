@@ -1,0 +1,311 @@
+.samson-news {
+    margin-top: $nav-height;
+    background:  linear-gradient(58deg, rgba(255,255,255,1) 30%, rgba(0,0,0,0) 55%),url("/images/liverpool_day.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    // background: linear-gradient(58deg, rgba(255,255,255,1) 30%, rgba(0,0,0,0) 55%);
+}
+
+.samson-news > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6.5rem;
+    font-weight: 300;
+    color: $font_dark;
+    padding: 6%;
+}
+
+.featured-img {
+    width: 70%;
+    height: 85%;
+    overflow: hidden;
+    margin-top: 3.5%;
+}
+
+.ft-img {
+    width: 100%;
+}
+
+.featured-article {
+    background: $red-background;
+    height: 75vh;
+    position: relative;
+    margin-top: $nav-height;
+    margin-bottom: $nav-height;
+    box-shadow: 0px 0px 20px 10px $red-background;
+    overflow: hidden;
+}
+
+.featured-dag {
+    height: 100%;
+    width: 70%;
+    transform: skew(15deg);
+    background: #FFFFFF;
+    margin-left: 49%;
+    position: absolute;
+    top: 0%;
+    border-left: 1px solid $red-background;
+}
+
+.feat {
+    transform: skew(-15deg);
+    margin-left: 65%;
+    margin-top: 1%;
+}
+
+.ft-title > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+    color: $font_dark;
+}
+
+.ft-content {
+    width: 72%;
+    height: 70%;
+    transform: skew(-15deg);
+}
+
+.underline {
+    border-bottom: 3px solid $red-highlight;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ft-text {
+    padding-top: 3%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ft-text > p {
+    font-family: 'Roboto', sans-serif;
+    font-size:1.55rem;
+    font-weight: 300;
+    color: $font_dark;
+    margin: 0px;
+}
+
+.ft-button {
+    transform: skew(-15deg);
+    position: absolute;
+    bottom: 5%;
+    left: 55%;
+}
+
+.ft-link {
+    color: $background;
+    font-style: unset;
+}
+
+.news-featured-container {
+    margin-top: $nav-height;
+    box-shadow: 10px 0px 20px 10px $background inset;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+$featured-height: 75vh;
+
+.featured-row {
+    height: $featured-height;
+    overflow: hidden;
+    position: relative;
+    // background-color: color.adjust(#df2935, $lightness: -20%);
+}
+
+.featured-image {
+    filter: brightness(30%);
+    max-width: 100%;
+    padding: 0px;
+    width: unset;
+}
+
+.featured {
+    margin-top: math.div($overview-height, 6);
+    padding-left: 3rem;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.featured-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+    font-weight:400;
+    color: $background;
+}
+
+.featured-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8em;
+    font-weight:300;
+    color: $background;
+}
+
+.featured-star {
+    display: flex;
+    position: absolute;
+    top: 15vh;
+    left: 75%;
+}
+
+.featured-icon {
+    font-size: 4rem;
+    color: $background;
+}
+
+.ft-cntr {
+    padding-top: .5%;
+    padding-left: .5%;
+}
+
+.ft {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight:400;
+    color: $background;
+}
+
+//mobile-ft-article
+
+.mob-featured-article {
+    height: fit-content;
+    box-shadow: 0px 0px 20px 10px $red-background;
+    padding: 0px;
+    margin-top: 4rem;
+    display: none;
+}
+
+.mob-featured-article > .row {
+    height: 90vh;
+}
+
+.mob-ft-t {
+    @include default-font;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    color: $background;
+    padding-top: 5px;
+}
+
+.mfa-image {
+    height: 45%;
+    background: $red-background;
+}
+
+.mob-ft-img {
+    width: 95%;
+    padding-top: 12%;
+    margin-left: 10px;
+}
+
+.mfa-text { 
+    height: 55%;
+    background: $background;
+    border-top: 1px solid $red-background;
+    text-align: center;
+}
+
+.mfa-text > h1{
+    @include default-font;
+    padding-top: 1rem;
+}
+
+.mob-ft-text {
+    @include default-font;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+
+.read-button {
+    position: absolute;
+    bottom: 20vh;
+    left: 55%;
+    padding-left: 3rem;
+}
+
+.prev-news {
+    height: fit-content;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.prev-news-row {
+    height: fit-content;
+}
+
+.news-page {
+    height: 60vh;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 1em 0em;
+    box-shadow: 0px 0px 8.5px $shadow;
+    transition: box-shadow 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.news-page:hover {
+    box-shadow: 0px 0px 30px 10px $shadow;
+}
+
+.load-more-button {
+    width: fit-content;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.other-news {
+    width: 100%;
+}
+
+.other-news > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight:400;
+    color: $font_dark;
+}
+
+.other-news > div {
+    width: 20%;
+    border-bottom: 3px solid $red-highlight;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1000px) {
+    .mob-featured-article {
+        display: block;
+    }
+    .featured-article {
+        display: none;
+    }
+}
+
+@media (max-width:1150px) {
+    .news-title > h4 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:768px) {
+    .mob-news-info {
+        display: block;
+    }
+    .news-info {
+        display: none;
+    }
+}

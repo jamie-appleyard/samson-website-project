@@ -1,0 +1,200 @@
+{% extends '_sisterbase.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid career-hero">
+    <div class="row">
+        <img src="{% static 'images/Compressed/Photo_15_Compressed.jpg' %}" class="career-hero-image image-darken">
+        <h1 class="career-hero-text"> Careers at Samson </h1>
+    </div>
+</div>
+
+<div class="container-fluid careers-header">
+    <div class="row justify-content-around">
+        <div class="col-6 career-side">
+            <div class="career-title">
+                <h1>Careers</h1>
+                <a href="#vacancies" class="btn btn-lg btn-primary">See Vacancies</a>
+            </div>
+            <div class="career-content">
+                <div class="career-section" id="careerSamson">
+                    <div class="careerimage">
+                        <img src="{% static 'images/portallogo.jpg' %}" alt="">
+                    </div>
+                    <div class="careertext text-center">
+                        <h4>Working at Samson</h4>
+                        <div class="underline"></div>
+                        <p>Working in Facilities Management can be rewarding and very challenging, every task is different
+                            and we need to be adaptable at all times to provide the right service at the right times and often
+                            at short notice, if you like being kept on your toes, this is the right industry for you.
+                        </p>
+                    </div>
+                </div>
+                <div class="career-section" id="careerSamson">
+                    <div class="careerimage">
+                        <img src="{% static 'images/Compressed/Photo_31_Compressed.jpg' %}" alt="">
+                    </div>
+                    <div class="careertext text-center">
+                        <h4>Facilites management</h4>
+                        <div class="underline"></div>
+                        <p>Facilities management covers a wide range of services. Samson made their start in security but
+                            expanded in to reception, cleaning, landscaping and other unique services related to the specific
+                            needs of the client on the day. We need multiskilled and committed staff to help us adapt to the challenges
+                            that are presented to us as an FM organisation.
+                        </p>
+                    </div>
+                </div>
+                <div class="career-section" id="careerSamson">
+                    <div class="careerimage">
+                        <img src="{% static 'images/Compressed/Photo_34_Compressed.jpg' %}" alt="">
+                    </div>
+                    <div class="careertext text-center">
+                        <h4>Adaptability</h4>
+                        <div class="underline"></div>
+                        <p>Here at Samson we do the best we can to push those who have the drive and the talent up through the ranks,
+                            as a company who are always on the lookout for talent and new growth opportunities, we give those willing to
+                            help us the best chance possible to do so.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 training-side">
+            <div class="training-title">
+                <h1>Training</h1>
+                <a href="#training" class="btn btn-lg btn-danger">Opportunities</a>
+            </div>
+            <div class="career-content">
+                <div class="career-section" id="careerSamson">
+                    <div class="careerimage">
+                        <img src="{% static 'images/Compressed/Photo_41_Compressed.jpg' %}" alt="">
+                    </div>
+                    <div class="careertext text-center">
+                        <h4>Why do training?</h4>
+                        <div class="underline"></div>
+                        <p>Receiving quality training from a company like Samson gives you the qualifications necessary
+                            to stand out in your specialisation. Learning leads to better job opportunities and the best
+                            chance of advancement through the industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="career-section" id="careerSamson">
+                    <div class="careerimage">
+                        <img src="{% static 'images/Compressed/Photo_2_Compressed.jpg' %}" alt="">
+                    </div>
+                    <div class="careertext text-center">
+                        <h4>What can we offer ?</h4>
+                        <div class="underline"></div>
+                        <p>We provide courses in the major areas of Facilites Management. Security and every facet of
+                            it, primarily focused on one of the most challenging environments to operate within, Health care.
+                            We also train professional cleaners, receptionists and engineers.
+                        </p>
+                    </div>
+                </div>
+                <div class="career-section" id="careerSamson">
+                    <div class="careerimage">
+                        <img src="{% static 'images/Compressed/Photo_26_Compressed.jpg' %}" alt="">
+                    </div>
+                    <div class="careertext text-center">
+                        <h4>When is the right time to train ?</h4>
+                        <div class="underline"></div>
+                        <p>We suggest receiving the training for your desired role before applying for jobs,
+                            this will uniquely position you above competition to secure roles and be recommended
+                            for advancement through management.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="career-block container-fluid mb-5 px-5 text-center" id="vacancies">
+    <h1 class="career-block-title">Current Vacancies</h1>
+    <div class="underline"></div>
+    <table class="table table-striped table-hover vacancies-table">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Summary</th>
+                <th scope="col">Description</th>
+                <th scope="col">Rate</th>
+                <th scope="col">Average Weekly Hours</th>
+                <th scope="col">Contract Type</th>
+                <th scope="col">Location</th>
+                <th scope="col">Number of Positions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for career in careers %}
+                <tr>
+                    <td>{{ career.job_title }}</td>
+                    <td>{{ career.job_summary }}</td>
+                    <td>{{ career.job_description }}</td>
+                    <td>{{ career.rate_of_pay }}</td>
+                    <td>{{ career.job_average_weekly_hours }}</td>
+                    <td>{{ career.get_job_contract_type_display }}</td>
+                    <td>{{ career.job_location }}</td>
+                    <td>{{ career.job_number_of_positions }}</td>
+                    <td><a href="{% url 'apply' career.pk %}" class="btn btn-sm btn-primary">Apply</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div class="mob-career-block container-fluid mb-5 mt-5 text-center" id="vacancies">
+    <h1 class="career-block-title">Current Vacancies</h1>
+    <div class="underline"></div>
+    <table class="table table-striped table-hover vacancies-table">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Rate p/h</th>
+                <th scope="col">Hours p/w</th>
+                <th scope="col">Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for career in careers %}
+                <tr>
+                    <td>{{ career.job_title }}</td>
+                    <td>{{ career.rate_of_pay }}</td>
+                    <td>{{ career.job_average_weekly_hours }}</td>
+                    <td>{{ career.job_location }}</td>
+                    <td><a href="{% url 'apply' career.pk %}" class="btn btn-sm btn-primary">Apply</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div class="training-block container-fluid pt-5" id="training">
+    <div class="row">
+        <h1 class="training-block-title">Training</h1>
+        <div class="training-underline mb-5"></div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="col-12 training-text text-center">
+                <h3>New training centre under construction</h3>
+                <div class="underline mb-3"></div>
+                <p>Our new specialist training facility is almost finished construction in Wavertree. With new technology, a suite of tools for training, expert trainers and career progression pathways available
+                    please complete the form below to register your interest and we will contact you with more information upon completion.
+                </p>
+            </div>
+            <div class="col-12">
+                {% crispy form %}
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+            <img src="{% static 'images/Compressed/Photo_17_Compressed.jpg' %}" alt="" class="training-img">
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,383 @@
+.apply-header {
+    margin-top: $nav-height;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    align-content: center;
+}
+
+.apply-header-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.apply-image {
+    width:100%;
+}
+
+.apply-header-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    top:10%;
+}
+
+.apply-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    color: $background;
+}
+
+.career-detail {
+    position: relative;
+}
+
+.career-detail > .row {
+    height: fit-content;
+}
+
+.detail-col {
+    height: fit-content;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 0px;
+}
+
+.detail-con {
+    width: 98%;
+    border-radius: 20px;
+    background: $background;
+    box-shadow: 0px 0px 20px 0px $shadow;
+}
+
+.detail-title {
+    height: 20%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 5px solid $red_highlight;
+}
+
+.detail-title > h5 {
+    @include default-font;
+}
+
+.c-detail-text {
+    height: 80%;
+    padding: 1.75rem;
+    background: $background;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+
+.c-detail-text > h5 {
+    @include default-font;
+    font-size: 1.75rem;
+}
+
+.c-detail-text > p {
+    @include default-font;
+    font-size: 1.5rem
+}
+
+.training-col {
+    height: fit-content;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 0px;
+}
+
+.training-con {
+    width: 98%;
+    border-radius: 20px;
+    background: $background;
+    box-shadow: 0px 0px 20px 0px $shadow;
+}
+
+.c-training-title {
+    height: 20%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 5px solid $professional_services;
+}
+
+.c-training-title > h5 {
+    @include default-font;
+}
+
+.c-training-text {
+    height: 80%;
+    padding: 1.75rem;
+    background: $background;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+
+.c-training-text > h5 {
+    @include default-font;
+    font-size: 1.75rem;
+}
+
+.c-training-text > p {
+    @include default-font;
+    font-size: 1.5rem;
+}
+
+.application_form {
+    height: fit-content;
+    position: relative;
+    width: 95%;
+    padding: 2rem;
+    box-shadow: 0px 0px 20px 0px $shadow;
+    border-radius: 20px;
+}
+
+.application-title {
+    @include default-font;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.form-title {
+    @include default-font;
+    font-size: 2.5rem;
+}
+
+.about_you {
+    border: 2px solid $red_highlight;
+    box-shadow: 0px 0px 10px $shadow;
+    width: 90%;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+.about_you > div > label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $font-dark;
+}
+
+.about_you > h2 {
+    @include default-font
+}
+
+.location {
+    border: 2px solid $red_highlight;
+    box-shadow: 0px 0px 10px $shadow;
+    width: 90%;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+.location > h2 {
+    @include default-font
+}
+
+.location > div > label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $font-dark;
+}
+
+.app_checkboxes_row {
+    border: 2px solid $red_highlight;
+    box-shadow: 0px 0px 10px $shadow;
+    width: 95%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+.group_b {
+    padding: 0px;
+}
+
+.group_b > div > div > .custom-control {
+    width: 45%;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sia_row {
+    border: 2px solid $red_highlight;
+    box-shadow: 0px 0px 10px $shadow;
+    border-radius: 20px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+.sia_badges > div > div > .custom-control {
+    display: inline-block;
+    padding: 0px;
+    margin-left: 2rem;
+}
+
+.sia_badges > div {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.sia_badges > div > label {
+    display: none;
+}
+
+.identification_row {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 2px solid $red_highlight;
+    box-shadow: 0px 0px 10px $shadow;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.id-note{
+    @include default-font;
+    font-size: 1.3rem;
+    letter-spacing: 0.15rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+    color: $red_highlight;
+}
+
+.completed {
+    color: $green_highlight;
+}
+
+.app_checkboxes_row > h1 {
+    @include default-font;
+}
+
+.cv_row {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 2px solid $red_highlight;
+    box-shadow: 0px 0px 10px $shadow;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cv-upload {
+    align-self: center;
+}
+
+.application-submitted {
+    display: none;
+    width: 80%;
+    background: $green_highlight;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: $background;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-radius: 10px;
+}
+
+.application-failed {
+    display: none;
+}
+
+.identity-error {
+    display: none;
+}
+
+.inline-field {
+    display: inline-block;
+    width: 100%;
+}
+
+.inline-fields > div {
+    width: 49%;
+    display: inline-block;
+}
+
+.ti-submit-success {
+    display: none;
+    @include default-font;
+}
+
+.custom-control-label {
+    @include default-font;
+    font-size: 1.5rem;
+}
+
+.form-control {
+    border: 1.5px solid $font-dark;
+}
+
+@media (max-width: 1000px) {
+    .apply-text {
+        font-size: 2rem;
+    }
+    .apply-header {
+        height: 25vh;
+    }
+    .detail-col {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .training-col {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .form-title {
+        font-size: 1.6rem;
+    }
+    .custom-control-label {
+        font-size: 1.4rem;
+        padding-left: 15px;
+    }
+    .custom-control {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+    }
+    .custom-control-input {
+        margin-top: 10px;
+    }
+    .sia_badges {
+        padding: 0px;
+    }
+    .identification_row {
+        padding: 0.5rem;
+    }
+    .id-note {
+        font-size: 1.2rem;
+    }
+    .application_form {
+        padding: 0px;
+    }
+    .group_b > div > div > .custom-control {
+        display: flex;
+        width: unset;
+        margin-bottom: 15px;
+    }
+    .cv_row {
+        padding: 0.2rem;
+    }
+    .app-submit {
+        margin: 1rem 35%;
+    }
+}

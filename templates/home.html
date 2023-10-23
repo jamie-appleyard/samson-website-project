@@ -1,0 +1,421 @@
+{% extends '_sisterbase.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="hero-vid-bg">
+    <video
+    id="hero-video"
+    class="video-js vjs-16-9"
+    preload="auto"
+    autoplay
+    muted
+    loop
+    data-setup="{}">
+    <source src="{% static 'video/Infographic_720 7.55 MB.mp4' %}" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+</div>
+
+<div class="carousel-container mb-5">
+    <div class="carousel slide carousel-slide" id="carouselFade" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval='5000'>
+                <img src="{% static 'images/Samson_Logo_Slide_Images/Blue_Top.png' %}" alt="Carousel Image" class="d-block carousel-image">
+                <div class="mob-slide-text">
+                    <h1 class="slide-text">Security</h1>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval='5000'>
+                <img src="{% static 'images/Samson_Logo_Slide_Images/White_Top.png' %}" alt="Carousel Image" class="d-block carousel-image">
+                <div class="mob-slide-text">
+                    <h1 class="slide-text text-dark">Guarding</h1>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval='5000'>
+                <img src="{% static 'images/Samson_Logo_Slide_Images/Red_Top.png' %}" alt="Carousel Image" class="d-block carousel-image">
+                <div class="mob-slide-text">
+                    <h1 class="slide-text">Careers</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carousel slide" id="carouselFade" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval='6000'>
+                <img src="{% static 'images/Samson_Logo_Slide_Images/Blue_Middle.png' %}" alt="Carousel Image" class="d-block carousel-image">
+                <div class="mob-slide-text">
+                    <h1 class="slide-text">Fire</h1>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval='6000'>
+                <img src="{% static 'images/Samson_Logo_Slide_Images/White_Middle.png' %}" alt="Carousel Image" class="d-block carousel-image">
+                <div class="mob-slide-text">
+                    <h1 class="slide-text text-dark">Reception</h1>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval='6000'>
+                <img src="{% static 'images/Samson_Logo_Slide_Images/Red_Middle.png' %}" alt="Carousel Image" class="d-block carousel-image">
+                <div class="mob-slide-text">
+                    <h1 class="slide-text">Training</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carousel slide" id="carouselFade" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval='7000'>
+                <img src="{% static 'images/Samson_Logo_Slide_Images/Blue_Bottom.png' %}" alt="Carousel Image" class="d-block carousel-image">
+                <div class="mob-slide-text">
+                    <h1 class="slide-text">Facilities</h1>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval='7000'>
+                <img src="{% static 'images/Samson_Logo_Slide_Images/White_Bottom.png' %}" alt="Carousel Image" class="d-block carousel-image">
+                <div class="mob-slide-text">
+                    <h1 class="slide-text text-dark">Cleaning</h1>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval='7000'>
+                <img src="{% static 'images/Samson_Logo_Slide_Images/Red_Bottom.png' %}" alt="Carousel Image" class="d-block carousel-image">
+                <div class="mob-slide-text">
+                    <h1 class="slide-text">Accredited</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-cover">
+        <h1 class="carousel-cover-heading">Cost Saving Facilites Innovation Nationwide.</h1>
+        <h5 class="carousel-cover-subheading">We're there for you, so you can be there for them.</h5>
+        <a href="#WhatWeDo" class="btn btn-lg btn-danger mt-3">Learn More</a>
+    </div>  
+</div>
+
+
+<h3 class="module-title" id="WhatWeDo"><span class="module-number mb-2 pt-4">01 </span>What We Do</h3>
+
+<div class="service-widget-container container-fluid">
+    <div class="row widget-row justify-content-between">
+        <div class="widget-container" id="guardingWidget">
+            <div class="row justify-content-around wig-row">
+                <div class="widget">
+                    <img src="{% static 'images/Widgets/Colour sheilds/Guarding sheild.png' %}" alt="" class="widget-image">
+                    <div class="widget-name text-center">
+                        <h5 class="widget-name">Guarding</h5>
+                    </div>
+                </div>
+                <div class="widget-description">
+                    <h3>Guarding</h3>
+                    <p>Always professional and highly reliable, our guards are there for you.</p>
+                    <a href="{% url 's_guards' %}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="widget-container" id="monitoringWidget">
+            <div class="row justify-content-around wig-row">
+                <div class="widget">
+                    <img src="{% static 'images/Widgets/Colour sheilds/Monitoring sheild.png' %}" alt="" class="widget-image">
+                    <div class="widget-name text-center">
+                        <h5 class="widget-name">Monitoring</h5>
+                    </div>
+                </div>
+                <div class="widget-description">
+                        <h3>Monitoring</h3>
+                        <p>24 hour care. We take care of things when you cant.</p>
+                        <a href="{% url 's_monitoring' %}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="widget-container" id="keyWidget">
+            <div class="row justify-content-around wig-row">
+                <div class="widget">
+                    <img src="{% static 'images/Widgets/Colour sheilds/Keyholding sheild.png' %}" alt="" class="widget-image">
+                    <div class="widget-name text-center">
+                        <h5 class="widget-name">Key Holding</h5>
+                    </div>
+                </div>
+                <div class="widget-description">
+                        <h3>Key Holding</h3>
+                        <p>We manage thousands of keys, need your buildings opened and closed? Your in safe hands.</p>
+                        <a href="{% url 's_keymanagement' %}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="widget-container" id="engineeringWidget">
+            <div class="row justify-content-around wig-row">
+                <div class="widget">
+                    <img src="{% static 'images/Widgets/Colour sheilds/Engineering sheild.png' %}" alt="" class="widget-image">
+                    <div class="widget-name text-center">
+                        <h5 class="widget-name">Engineering</h5>
+                    </div>
+                </div>
+                <div class="widget-description">
+                    <h3>Engineering</h3>
+                    <p>Design, Install, Maintain, Repair, Monitor. CCTV, Access Control, Alarms.</p>
+                    <a href="{% url 's_engineering' %}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="widget-container" id="helpdeskWidget">
+            <div class="row justify-content-around wig-row">
+                <div class="widget">
+                    <img src="{% static 'images/Widgets/Colour sheilds/Helpdesk sheild.png' %}" alt="" class="widget-image">
+                    <div class="widget-name text-center">
+                        <h5 class="widget-name">Helpdesk</h5>
+                    </div>
+                </div>
+                <div class="widget-description">
+                    <h3>Helpdesk</h3>
+                    <p>Create, Delegate, Asign, Automate. Facilities made easy.</p>
+                    <a href="{% url 's_helpdesk' %}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="widget-container" id="professionalWidget">
+            <div class="row justify-content-around wig-row">
+                <div class="widget">
+                    <img src="{% static 'images/Widgets/Colour sheilds/Professional sheild.png' %}" alt="" class="widget-image">
+                    <div class="widget-name text-center">
+                        <h5 class="widget-name">Professional Services</h5>
+                    </div>
+                </div>
+                <div class="widget-description">
+                    <h3>Professional Services</h3>
+                    <p>Cleaning, Reception, Consultancy, Care. Master your portfolio.</p>
+                    <a href="{% url 's_professional' %}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3 class="module-title" id="HowWeHelp"><span class="module-number mb-5 mt-5">02 </span>How we can help</h3>
+
+<div class="container creds-carousel">
+    <div class="creds-container">
+        <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SASELISC04">
+            <img src="{% static 'images/creds 2/siaac.png' %}" alt="accreditation" class="cred">
+        </a>
+        <img src="{% static 'images/creds 2/sfms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sca.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/nhssbs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtfdas.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtarc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crt9001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdias.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdce.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdcctv.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdacs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crd14001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+        <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SASELISC04">
+            <img src="{% static 'images/creds 2/siaac.png' %}" alt="accreditation" class="cred">
+        </a>
+        <img src="{% static 'images/creds 2/BAFE-logo.jpg' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sca.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/nhssbs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtfdas.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtarc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crt9001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdias.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdce.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdcctv.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdacs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crd14001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+        <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SASELISC04">
+            <img src="{% static 'images/creds 2/siaac.png' %}" alt="accreditation" class="cred">
+        </a>
+        <img src="{% static 'images/creds 2/BAFE-logo.jpg' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sfms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sca.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/nhssbs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtfdas.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtarc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crt9001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdias.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdce.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdcctv.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdacs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crd14001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+        <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SASELISC04">
+            <img src="{% static 'images/creds 2/siaac.png' %}" alt="accreditation" class="cred">
+        </a>
+        <img src="{% static 'images/creds 2/BAFE-logo.jpg' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sfms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sca.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/nhssbs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtfdas.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtarc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crt9001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdias.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdce.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdcctv.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdacs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crd14001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+    </div>
+</div>
+
+<div class="container client-carousel">
+    <div class="client-container">
+        <img src="{% static 'images/Cli_logo/Ambition - Sefton.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Associates of Cape Cod.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/B_M.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Blackburne House.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Broughton Hall HS.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Cardinal Heenan HS.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Chavasse Court Chambers.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Clarke Energy.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Goodman Grant.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/James Murray.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Kirkby Signs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Life Rooms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Life Science.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Marshall Property.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Mersey Care.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Mersey Youth Association.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/North Liv Academy.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/SUEZ.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Trak.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Ambition - Sefton.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Associates of Cape Cod.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/B_M.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Blackburne House.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Broughton Hall HS.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Cardinal Heenan HS.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Chavasse Court Chambers.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Clarke Energy.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Cobalt House.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Goodman Grant.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/James Murray.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Kirkby Signs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Lakeside School.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Life Rooms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Life Science.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Marshall Property.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Mersey Youth Association.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/North Liv Academy.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Bord na Mona.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Potter Space.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Northwood.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/LCP.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Triton.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Betsi Cadwaller.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Knowsley Council.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Birmingham City Council.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/NHS Warrington.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/NHS Southport _ Ormskirk.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/NHS Property Services.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Liverpool City Council.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/NHS Bolton.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/CHP.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Mersey Care.png' %}" alt="accreditation" class="cred">
+    </div>
+</div>
+
+
+<div class="container-fluid about-module">
+    <h3 class="module-title" id="AboutSamson"><span class="module-number">03 </span>About Samson</h3>
+
+    <div class="row justify-content-around about-module-hidden" id="sec-1">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7 about-module-image-container" id="about-img"></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 about-module-text-container">
+            <h2 class="about-module-title">We pride ourselves on being the most caring, adaptable and reliable company in the facilities space.</h2>
+            <p class="about-module-text">For over 20 years we have adapted and improved the practices of facilities management to bring those we work with the best possibe value and the most reliable service every day. Our Approved activities include Security Guarding, Key Holding and CCTV.</p>
+            <a href="{% url 'about_us' %}" class="about-module-link">Learn More <i class="fas fa-arrow-right" id="linkArrow"></i></a>
+        </div>
+    </div>
+
+    <div class="row justify-content-around about-module-hidden" id="sec-2">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7 about-module-image-container" id="quality-img"></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 about-module-text-container">
+            <h2 class="about-module-title">Quality and systematic protocol improvements are at the heart of our service provision.</h2>
+            <p class="about-module-text">With a systems approach to quality, we have consitantly adapted our service delivery to provide the best possible value to clients and customers alike.</p>
+            <a href="{% url 'about_quality' %}" class="about-module-link">Find out more <i class="fas fa-arrow-right" id="linkArrow"></i></a>
+        </div>
+    </div>
+
+    <div class="row justify-content-around about-module-hidden" id="sec-3">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7 about-module-image-container" id="accred-img"></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 about-module-text-container">
+            <h2 class="about-module-title">We tick all the boxes. Our portfolio of esteemed accreditations means that we have proven our worth as an exceptional facilities provider.</h2>
+            <p class="about-module-text">We push beyond the standards set by our auditors to not only secure accreditation, but to make the difference our clients need, to allow you be there for the poeple you help.</p>
+            <a href="{% url 'about_accreditation' %}" class="about-module-link">See the details <i class="fas fa-arrow-right" id="linkArrow"></i></a>
+        </div>
+    </div>
+
+    <div class="row justify-content-around about-module-hidden" id="sec-4">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7 about-module-image-container" id="csr-img"></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 about-module-text-container">
+            <h2 class="about-module-title">We are there for you so you can be there for them</h2>
+            <p class="about-module-text">Our primary objective is to assist you to help the people that depend upon the quality of your service. We can then subsequently push our talents in to the development of our local communities.</p>
+            <a href="{% url 'about_csr' %}" class="about-module-link">Explore our commitment <i class="fas fa-arrow-right" id="linkArrow"></i></a>
+        </div>
+    </div>
+    <div class="about-module-navigator"><i class="fas fa-arrow-left" id="selLeft"></i><i class="fas fa-dot-circle current" id="sel-1"></i><i class="fas fa-dot-circle" id="sel-2"></i><i class="fas fa-dot-circle" id="sel-3"></i><i class="fas fa-dot-circle" id="sel-4"></i><i class="fas fa-arrow-right" id="selRight"></i></div>
+</div>
+
+<div class="container-fluid new-news">
+    <h3 class="module-title" id="SamsonNews"><span class="module-number">04 </span>Samson News</h3>
+    <div class="row news-row justify-content-around">
+        {% for article in articles %}
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-4 col-xxl-4 news-wrapper">
+                <div class="news">
+                    <a href="{% url 'article' article.id %}">
+                        <div class="news-image-container">
+                            <img src="{{ article.image_main.url }}" alt="Career Image" class="news-image">
+                        </div>
+                        <div class="news-info">
+                            <div class="news-title text-center">
+                                <h4>{{ article.title }}</h4>
+                            </div>
+                            <div class="news-sub">
+                                <p>{{ article.heading }}</p>
+                            </div>
+                        </div>
+                        <div class="mob-news-info">
+                            <div class="mob-news-title text-center">
+                                <h4>{{ article.title }}</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="news-link text-center">
+        <a href="{% url 'news' %}">See more content <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+
+<div class="container-fluid careers-module-container mt-5 pt-5">
+    <h3 class="module-title" id="SamsonCareers"><span class="module-number">05 </span>Careers at Samson</h3>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 careers-module-image-container">
+            <img src="{% static 'images/Compressed/Photo_15_Compressed.jpg' %}" alt="careers image" class="careers-image">
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 careers-module-description pt-4">
+            <h2 class="careers-module-title">
+                Evolve alongside us, with opportunity always on the horizon working with Samson is a fantastic chance to break in to the facilities management industry.
+            </h2>
+            <div class="careers-module-underline mt-3 mb-3"></div>
+            <h5 class="careers-module-text text-wrap">
+                Working with Samson means developing all the skills necesary to thrive in your chosen field. Working alongside some of the most esteemed organisations in the UK
+                to ensure that without fail they are open in the morning, protected and cared for during the day, and secured at night. Take your place in the backbone of the NHS,
+                energy and the community. You are guaranteed to develop alongside us as a facilites expert.
+            </h5>
+            <div class="careers-module-underline mt-3 mb-4"></div>
+            <a href="{% url 'careers' %}#vacancies" class="careers-module-link">See Opportunities  <i class="fas fa-arrow-right"></i></a>
+            <a href="{% url 'careers' %}#training" class="careers-module-link careers-module-link-margin">Explore Training  <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

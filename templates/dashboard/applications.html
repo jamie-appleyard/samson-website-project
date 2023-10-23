@@ -1,0 +1,62 @@
+{% extends '_dashbase.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+    <h1>Applications List</h1>
+    {% if applications %}
+        <div class="applications">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Town</th>
+                        <th>Postcode</th>
+                        <th>UK Bank Account</th>
+                        <th>Criminal Offences</th>
+                        <th>Over 18</th>
+                        <th>CV Uploaded</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for app in applications %}
+                        <tr>
+                            <td>{{ app.first_name }} {{ app.last_name }}</td>
+                            <td>{{ app.email_address }}</td>
+                            <td>{{ app.mobile_number }}</td>
+                            <td>{{ app.town }}</td>
+                            <td>{{ app.postcode }}</td>
+                            {% if app.uk_bank_account == True %}                   
+                                <td><i class="fas fa-check-circle text-success"></i></td>
+                            {% else %}
+                                <td><i class="fas fa-times-circle text-danger"></i></td>
+                            {% endif %}
+                            {% if app.criminal_offences == True %}                   
+                                <td><i class="fas fa-question text-warning"></i></td>
+                            {% else %}
+                                <td><i class="fas fa-times-circle text-success"></i></td>
+                            {% endif %}
+                            {% if app.over_18 == True %}                   
+                                <td><i class="fas fa-check-circle text-success"></i></td>
+                            {% else %}
+                                <td><i class="fas fa-times-circle text-danger"></i></td>
+                            {% endif %}
+                            {% if app.cv %}                   
+                                <td><i class="fas fa-check-circle text-success"></i></td>
+                            {% else %}
+                                <td><i class="fas fa-times-circle text-danger"></i></td>
+                            {% endif %}
+                            <td><a href="{% url 'applicant' app.pk %}" class="btn btn-sm btn-success">See more</a></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <h1 class = "text-light">Their have been no applications for this role</h1>
+    {% endif %}
+
+{% endblock content %}

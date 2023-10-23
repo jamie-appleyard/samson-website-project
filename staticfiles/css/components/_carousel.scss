@@ -1,0 +1,83 @@
+.carousel-container {
+    height:fit-content;
+    /// overflow: hidden;
+    display: none;
+    margin: $nav-height 0px;
+    padding: 0px;
+}
+
+.carousel-slide {
+    height: 33.3333%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    // transform: translateY(-17%);
+    margin: 0px;
+    padding: 0px;
+}
+
+.image-darken {
+    filter: brightness(50%)
+}
+
+.carousel-cover {
+    height: fit-content;
+    display: none;
+    width:90vw;
+    z-index: 97;
+    position: absolute;
+    top: 10vh;
+    left: 2rem;
+    padding-top: $nav-height;
+}
+
+.carousel-cover-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-style: normal;
+    color: $background;
+    font-size: 3rem;
+}
+
+.carousel-cover-subheading {
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    font-style: normal;
+    color: $background;
+    font-size: 1.8rem;
+    margin-top: 1.3rem;
+}
+
+.mob-slide-text {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    text-align: center;
+    height: fit-content;
+}
+
+.mob-slide-text > h1 {
+    @include default-font;
+    color: $background;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+@media (max-width: 576px) {
+    .carousel-container {
+        display: block;
+    }
+}

@@ -1,0 +1,76 @@
+.careers-module-container {
+    height: fit-content;
+}
+
+.careers-module-image-container {
+    position:relative;
+    // width: 45vw;
+}
+
+.careers-image {
+    width: 100%;
+}
+
+.careers-module-description {
+    height: 80%;
+}
+
+.careers-module-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    font-weight: 300;
+    font-style: normal;
+    color: $font_dark;
+    align-self: center;
+}
+
+.careers-module-underline {
+    border-bottom: 2px solid $red_background;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.careers-module-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    font-style: normal;
+    color: $font_dark;
+    align-self: center;
+}
+
+.careers-module-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-weight:200;
+    color: $font_dark;
+    text-decoration: none;
+}
+
+.careers-module-link-margin {
+    margin-left: 3rem;
+}
+
+.careers-module-link:hover {
+    color: $red_highlight;
+}
+
+.training-block > .col-6 {
+    overflow: hidden;
+}
+
+.training-img {
+    width: 100%;
+}
+
+@media (max-width: 490px) {
+    .careers-module-link-margin {
+        display: block;
+        padding-top: 1.2rem;
+        margin-left: 0px;
+    }
+    .careers-module-link {
+        font-size: 1.5em;
+    }
+}

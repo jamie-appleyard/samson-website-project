@@ -1,0 +1,153 @@
+.module-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    font-style: normal;
+    color: $font_dark;
+    margin-left: 2vw;
+}
+
+.module-number {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    font-style: normal;
+    color: $red_highlight;
+}
+
+.about-module {
+    height: fit-content;
+    margin-top: 2vh;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.about-module-hidden {
+    display: none;
+}
+
+.about-module-image-container {
+    height: $module-height;
+    overflow: hidden;
+}
+
+#about-img {
+    background-image: url("/static/images/Website_Images/Samson_Building_Compressed.jpg");
+    background-size:cover;
+}
+
+#quality-img {
+    background-image: url("/static/images/Compressed/Photo_32_Compressed.jpg");
+    background-size:cover;  
+}
+
+#accred-img {
+    background-image: url("/static/images/Website_Images/Accreditations.png");
+    background-size:cover;  
+}
+
+#csr-img {
+    background-image: url("/static/images/Compressed/Photo_7_Compressed.jpg");
+    background-size:cover;  
+}
+.about-module-image {
+    height: 100%;
+    width: 100%;
+}
+
+// .about-module-text-container {
+//     padding-top: 5%;
+//     padding-right: 5%;
+// }
+
+.about-module-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    font-style: normal;
+    color: $font_dark;
+    margin-bottom: 25px;
+}
+
+.about-module-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: 100;
+    font-style: normal;
+    color: $font_dark;
+    margin-bottom: 10px;
+}
+
+.about-module-link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    font-style: normal;
+    color: $font_dark;
+    cursor: pointer;
+}
+
+.about-module-link:hover {
+    color: $red_highlight;
+
+    #linkArrow{
+        animation: mymove 0.3s 1 alternate;
+    }
+}
+
+@keyframes mymove {
+    from {transform: translateX(0px);}
+    to {transform: translateX(10px);}
+  }
+
+.about-module-navigator {
+    position:absolute;
+    z-index: 99;
+    right: 10%;
+    bottom:3%;
+}
+
+.about-module-navigator i {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+.about-module-navigator i:hover {
+    color: $red_highlight;
+}
+
+.current {
+    color: $red_highlight;
+}
+
+.visible {
+    display:block!important;
+}
+
+@media (min-width: 992px) {
+    .about-module-text {
+        font-size: 1.6em;
+    }
+}
+@media (max-width:768px) {
+    .about-module-image-container {
+        height: 50vh;
+    }
+    .about-module-link {
+        font-size: 1.25em;
+        padding-top: 0.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-module-image-container {
+        height: 35vh;
+    }
+    .about-module-text {
+        margin-bottom: 40px;
+    }
+}
+

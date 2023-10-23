@@ -1,0 +1,130 @@
+{% extends '_sisterbase.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid about-header">
+    <h1 class="about-header-text">About Samson</h1>
+    <img src="{% static 'images/Compressed/Photo_29_Compressed.jpg' %}" alt="about-logo" class="about-img">
+</div>
+
+<div class="page-div">
+    <div class="about-nav" id="whoweare-sel">
+        <a href="{% url 'about_us' %}">
+            <h3>About Us</h3>
+        </a>
+    </div>
+    <div class="about-nav" id="quality-sel">
+        <a href="#quality"><h3>Quality</h3></a>
+    </div>
+    <div class="about-nav" id="accreditation-sel">
+        <a href="{% url 'about_accreditation' %}"><h3>Accreditation</h3></a>
+    </div>
+    <div class="about-nav" id="csr-sel">
+        <a href="{% url 'about_csr' %}"><h3>CSR</h3></a>
+    </div>
+</div>
+
+<div class="about-content-block" id="quality">
+    <h1>Quality & Compliance</h1>
+    <div class="about-underline"></div>
+    <div class="bb-text-left container-fluid">
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="bb-center-text">
+                    <h3>As Merseyside’s only privately owned monitoring station, quality is the key focus at Samson Security 
+                        Fire & Facilities. Being a fully integrated security and facilities provider, we understand the importance 
+                        of delivering service excellence that meets the requirements of both our clients and those that are lawfully in place.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row bb">
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6 mob-bb-img">
+                <div class="bb-image">
+                    <img src="{% static 'images/Website_Images/betsi.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="bb-tl-text">
+                    <h3>In order to maintain our high standards and prestigious SIA approved contractor status, we invest time and effort into training our 
+                        staff members to ensure that they obtain the specific accreditations and licences needed to carry out each service. By doing so we are able to lead the way when it comes to providing professional solutions with an unsurpassed service.
+                    </h3>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6 dt-bb-img">
+                <div class="bb-image">
+                    <img src="{% static 'images/Website_Images/betsi.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+        </div>
+        <div class="row bb">
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="bb-image">
+                    <img src="{% static 'images/Compressed/Photo_31_Compressed.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="bb-tl-text">
+                    <h3>Renowned for delivering innovative security, fire and facilities management services, we pride ourselves on our knowledge and expertise, together with our high levels of quality assurance.
+                        Unlike other national security companies, Samson Security Fire & Facilities is one of few to provide a vast array of solutions without the need of outsourcing.
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row bb">
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6 mob-bb-img">
+                <div class="bb-image">
+                    <img src="{% static 'images/portallogo.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="bb-tl-text">
+                    <h3>Our Quality Management System has been certified by auditors for quality, environmental, health and safety and information security standards, and has been approved by Security Systems Alarm Inspection Board (SSAIB) to the following standard: BS EN ISO 9001:2015 - incorporating the requirements of BS 7958, BS 7499, BS 7858, BS 8418 and BS 7984.
+                        In addition to maintaining our SIA approved contractor status, we continue to exceed the standards of many lawfully enforced regulations, as a result of our forward-thinking ethos and dedicated team of skilful staff.
+                    </h3>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6 dt-bb-img">
+                <div class="bb-image">
+                    <img src="{% static 'images/portallogo.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+        </div>
+        <div class="row bb">
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="bb-image">
+                    <img src="{% static 'images/Compressed/Photo_12_Compressed.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="bb-tl-text">
+                    <h3> Notably one of the most advanced in the UK, our Alarm Receiving Centre/Remote Video Response Centre (ARC/RVRC),  also referred to as ‘The Vaults’ is approved by the SSAIB – incorporating the following: BS 5979, BS 8418, BS 7858, BS 7958 and BS 8600.
+                        Samson Security Fire & Facilities is also an SSAIB approved installer of security installation equipment, PD 6662, BS EN 50131, BS 4737, BS 8243, BS 8473, BS 7858, BS 8418 and BS EN 50132-7.
+                        We are also registered with the SSAIB for the designs, installation and corrective maintenance of intruder alarms and requirements in accordance with PD 6662.
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row bb">
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6 mob-bb-img">
+                <div class="bb-image">
+                    <img src="{% static 'images/liverpool_day.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="bb-tl-text">
+                    <h3>By ensuring that we hold all of the necessary accreditations and legalities that verify our professional competence, we are able to guarantee customer satisfaction of the highest calibre.
+                        Samson Security Ltd holds SIA approved contractor status for the provision of Security Guarding, Key Holding and CCTV services.
+                    </h3>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-6 col-xl-6 col-xxl-6 dt-bb-img">
+                <div class="bb-image">
+                    <img src="{% static 'images/liverpool_day.jpg' %}" alt="" class="bb-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

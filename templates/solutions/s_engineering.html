@@ -1,0 +1,546 @@
+{% extends '_sisterbase.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid solution-overview-container">
+    <div class="row overview-row">
+        <div class="col-6 overview">
+            <h1 class="overview-title">Fire & Security Systems</h1>
+            <h2 class="overview-statement">Design, Install, Maintain, Repair, Monitor.</h2>
+            <h5 class="overview-description mt-3">We offer a diverse range of forward-thinking electronic security installations
+                to ensure the total safeguarding of any given site. Services include VSS, Intruder, Fire, Access Control and Energy Management.</h5>
+        </div>
+        <div class="col-6 overview-image-section">
+            <img src="{% static 'images/Website_Images/Engineering.png' %}" alt="Guarding Image" class="overview-image">
+        </div>
+    </div>
+    <div class="row lap-overview-row">
+        <div class="col-12 overview">
+            <h1 class="overview-title">Fire & Security Systems</h1>
+            <h2 class="overview-statement">Design, Install, Maintain, Repair, Monitor.</h2>
+            <h5 class="overview-description mt-3">We offer a diverse range of forward-thinking electronic security installations
+                to ensure the total safeguarding of any given site. Services include VSS, Intruder, Fire, Access Control and Energy Management.</h5>
+            <img src="{% static 'images/Website_Images/Engineering.png' %}" alt="Guarding Image" class="lap-overview-image">
+        </div>
+    </div>
+    <div class="row mob-overview-row">
+        <div class="col-12 mob-overview-image-section">
+            <img src="{% static 'images/Website_Images/Engineering.png' %}" alt="Guarding Image" class="mob-overview-image">
+        </div>
+        <div class="col-12 mob-overview">
+            <h1 class="mob-overview-title">Fire & Security Systems</h1>
+            <h2 class="mob-overview-statement">Design, Install, Maintain, Repair, Monitor.</h2>
+            <h5 class="mob-overview-description mt-3">We offer a diverse range of forward-thinking electronic security installations
+                to ensure the total safeguarding of any given site. Services include VSS, Intruder, Fire, Access Control and Energy Management.</h5>
+        </div>
+    </div>
+</div>
+
+<div class="container creds-carousel">
+    <div class="creds-container">
+        <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SASELISC04">
+            <img src="{% static 'images/creds 2/siaac.png' %}" alt="accreditation" class="cred">
+        </a>
+        <img src="{% static 'images/creds 2/sfms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sca.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/nhssbs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtfdas.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtarc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crt9001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdias.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdce.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdcctv.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdacs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crd14001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+        <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SASELISC04">
+            <img src="{% static 'images/creds 2/siaac.png' %}" alt="accreditation" class="cred">
+        </a>
+        <img src="{% static 'images/creds 2/BAFE-logo.jpg' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sca.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/nhssbs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtfdas.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtarc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crt9001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdias.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdce.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdcctv.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdacs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crd14001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+        <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SASELISC04">
+            <img src="{% static 'images/creds 2/siaac.png' %}" alt="accreditation" class="cred">
+        </a>
+        <img src="{% static 'images/creds 2/BAFE-logo.jpg' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sfms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sca.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/nhssbs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtfdas.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtarc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crt9001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdias.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdce.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdcctv.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdacs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crd14001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+        <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SASELISC04">
+            <img src="{% static 'images/creds 2/siaac.png' %}" alt="accreditation" class="cred">
+        </a>
+        <img src="{% static 'images/creds 2/BAFE-logo.jpg' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sfms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/sca.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/nhssbs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtfdas.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crtarc.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crt9001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdias.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdce.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdcctv.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crdacs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/crd14001.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/creds 2/afc.png' %}" alt="accreditation" class="cred">
+    </div>
+</div>
+
+<div class="container-fluid service-carousel-left sol_engineering_bg_l">
+    <div class="row sc-row">
+        <div class="col-sm-12 col-md-6 sc-image-side">
+            <div class="sc-image-container">
+                <div class="sc-image-slides">
+                    <div class="image-slide">
+                        <img src="{% static 'images/New_Website_Images/Photo_24_Compressed.jpg' %}" alt="Guarding Image" class="sc-image">
+                    </div>
+                    <div class="image-slide">
+                        <img src="{% static 'images/New_Website_Images/Engineering.png' %}" alt="Guarding Image" class="sc-image">
+                    </div>
+                    <div class="image-slide">
+                        <img src="{% static 'images/New_Website_Images/samcom.jpg' %}" alt="Guarding Image" class="sc-image">
+                    </div>
+                    <div class="image-slide">
+                        <img src="{% static 'images/New_Website_Images/samcom.jpg' %}" alt="Guarding Image" class="sc-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 sc-text-side text-center">
+            <div class="sc-text-container">
+                <div class="sc-text-slides">
+                    <div class="sc-text-slide">
+                        <h3 class="sc-title-sm">Video Surveillance Systems</h3>
+                        <div class="sc-title-underline"></div>
+                        <h5 class="sc-text-sm">As on eof the worlds most popular and socially present forms of surveillance, VSS, previously known as CCTV,
+                            enables you to record and react to incidents. VSS has become an essential tool to reduce crime. Prior to fitting VSS technology
+                            we will perform an in-depth risk analysis of the given site befor eoffering three levels of security that will be tailored to the
+                            specific property and suggested client preferences. 
+                        </h5>
+                        <a class="sc-link-right" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="sc-text-slide">
+                        <h3 class="sc-title-sm">Video Surveillance Systems</h3>
+                        <div class="sc-title-underline"></div>
+                        <h5 class="sc-text-sm">While we aim to make use of existing equipment if it's deemed fit for purpose, we take a strict approach when it comes
+                            to ensuring that the technology is up-to-date and relevant. With this in mind, we may suggest new solutions that are ideal for both you
+                            abd your budget. A Video Sureveillance System is a crutial part of your security system and should be maintained regularly to ensure the
+                            system remains fully operational. With our bespoke maintenance packages, you will benefit from routine inspections, carried out at regular
+                            service intervals by our qualified technicians, keeping your VSS system compliant standards and improving lifespan. You will also benefit
+                            from dicounted call-out rates and 24-hour support.
+                        </h5>
+                        <a class="sc-link-right" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="sc-text-slide">
+                        <h3 class="sc-title-sm">Video Surveillance Systems</h3>
+                        <div class="sc-title-underline"></div>
+                        <h5 class="sc-text-sm">Thanks to our state-of-the-art surveillance facilities confined within our Alarm Recieving Centre / Remote Video Response Centre
+                            (also known as 'The Vaults'), we are also able to monitor your premises via the use of motion detection. BS 8418 Detector-Activated
+                            VSS Monitoring ensures we are allerted to all activity which allows us to act on potential crimes immediately to help diminish the risk of their
+                            manifestations. On the rare occasion of an intruder or other incident, the relevant emergency services are contacted immediately.
+                        </h5>
+                        <a class="sc-link-right" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="sc-text-slide">
+                        <h3 class="sc-title-sm">Video Surveillance Systems</h3>
+                        <div class="sc-title-underline"></div>
+                        <h5 class="sc-text-sm">As an SSAIB-certificated provider, we continually demonstrate confidence in the design, installationand maintenance of compliant
+                            Video Surveillance Sytems. We work with industry leading brands of Video Surveillance equipment, including the following: Dahua, HikVision, IC Realtime,
+                            Axis Communications, Xtralis, Avigilon, GJD, Bosch, Genie, Panasonic, Samsung, Penton, Optex, Seagate, Western Digital.
+                        </h5>
+                        <a class="sc-link-right" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sc-controller"><span class="btn-prev"><i class="fas fa-chevron-left sc-left"></i></span><span class="btn-next"><i class="fas fa-chevron-right sc-right"></i></span></div>
+</div>
+
+<div class="container-fluid single-service-block-right sol_engineering_bg_r">
+    <div class="row ssb-row">
+        <div class="col-sm-12 col-md-6 ssb-text-side text-center">
+            <div class="ssb-text-container">
+                <h3 class="ssb-title-sm">Fire Detection and Alarm Systems</h3>
+                <div class="ssb-title-underline"></div>
+                <h5 class="ssb-text-sm">We provide a wide range of Open-Protocol Fire Detection and Alarm Systems, including Addressable, Conventional and Wireless Systems.
+                    It is a legal requirement for all non-domestic/commercial properties, where neccessary, to have appropriate Fire Detection and Alarm Systems installed.
+                    It is also a requirement to ensure those systems are appropriately maintained. Performed by competent technicians, we can design and install Fire Detection
+                    and Alarm Systems to meet the needs of a fire risk assessment. Our technicians will also perform detailed checks following installation to ensure the system
+                    is safe, ready to use and staff are appropriately trained in its operation.
+                </h5>
+                <a class="ssb-link-right" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 ssb-image-side">
+            <div class="ssb-image-container">
+                <img src="{% static 'images/New_Website_Images/Keypad.png' %}" alt="Engineering Image" class="ssb-image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid single-service-block-left sol_engineering_bg_l">
+    <div class="row ssb-row">
+        <div class="col-sm-12 col-md-6 ssb-image-side">
+            <div class="ssb-image-container">
+                <img src="{% static 'images/Compressed/Photo_17_Compressed.jpg' %}" alt="Engineering Image" class="ssb-image">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 ssb-text-side text-center">
+            <div class="ssb-text-container">
+                <h3 class="ssb-title-sm">Fire Detection and Alarm Systems</h3>
+                <div class="ssb-title-underline"></div>
+                <h5 class="ssb-text-sm">Our technicians have a comprehensive understanding of British Standards and with our maintenance packages, we will perform regular inspections
+                    to ensure your system is maintained to a high standard and that the system remains reliable, suitable for the building and full operational, ready in the event
+                    of a fire. You will also benefit from discounted call-out rates and 24-hour support. For extra protection we can also link your alarm system to our Alarm
+                    Recieving Centre, alerting us when a fire alarm is activated. Our control room presonnel will then notify the local fire and rescure service, as well as keyholder. 
+                </h5>
+                <a class="ssb-link-left" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid single-service-block-right sol_engineering_bg_r">
+    <div class="row ssb-row">
+        <div class="col-sm-12 col-md-6 ssb-text-side text-center">
+            <div class="ssb-text-container">
+                <h3 class="ssb-title-sm">Fire Detection and Alarm Systems</h3>
+                <div class="ssb-title-underline"></div>
+                <h5 class="ssb-text-sm">We are BAFE registered for the Installation, Maintanence, Commisioning and Handover fo Fire Alarm Systems, in which we are third-party certificated
+                    by SSAIB. We continuosly demonstrate best practice in working to the British Standard BS 5839-1 and BAFE SP203-1. We work with industry leading brands of fire equipment
+                    ,including the following: C-Tec, Advanced Electronics, Morley, Kentec Electronics, Apollo, Hochiki, KAC.
+                </h5>
+                <a class="ssb-link-right" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 ssb-image-side">
+            <div class="ssb-image-container">
+                <img src="{% static 'images/New_Website_Images/Keypad.png' %}" alt="Engineering Image" class="ssb-image">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid single-service-block-left sol_engineering_bg_l">
+    <div class="row ssb-row">
+        <div class="col-sm-12 col-md-6 ssb-image-side">
+            <div class="ssb-image-container">
+                <img src="{% static 'images/Compressed/Photo_17_Compressed.jpg' %}" alt="Engineering Image" class="ssb-image">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 ssb-text-side text-center">
+            <div class="ssb-text-container">
+                <h3 class="ssb-title-sm">Intruder and Hold-Up Alarm Systems</h3>
+                <div class="ssb-title-underline"></div>
+                <h5 class="ssb-text-sm">Whether you are a domestic customer looking for a basic audible ("bells-only") burglar alarm, or a commercial customer looking for a highly advanced,
+                    fully monitored alarm system with Police Response, our experienced team can tailor a solution to meet your needs. We provide systems to all current grading specifications
+                    (Grades 1 to 4) designed to best suit your premises and security requirements. We can link your Intruder Alarm Syste to our Alarm Recieving Centre, alerting us when your
+                    alarm is activated. Our control room personnel will then dispatch a keyolder, and, in the event of a verified intrusion, the police. 
+                </h5>
+                <a class="ssb-link-left" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid single-service-block-right sol_engineering_bg_r">
+    <div class="row ssb-row">
+        <div class="col-sm-12 col-md-6 ssb-text-side text-center">
+            <div class="ssb-text-container">
+                <h3 class="ssb-title-sm">Intruder and Hold-Up Alarm Systems</h3>
+                <div class="ssb-title-underline"></div>
+                <h5 class="ssb-text-sm">As an SSAIB-certified provider, we continually demonstrate confidence and competence in design, installation and maintenance of British Standard compliant
+                    Intruder Alarm Systems, meeting the requirements of Insurance Companies and enabling us to apply URN's (Police Response) for monitored systems. Keeping your alarm system
+                    maintained regularly will help you get the best value and performance out of the system. With our bespoke maintenance packeges, you will benefit from routine inspections,
+                    carried out at regular service intervals by our qualified technicians, keeping your alarm system compliant with current Standards and improving lifespan. You will also benefit
+                    from discounted call out rates and 24-hour support.
+                </h5>
+                <a class="ssb-link-right" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 ssb-image-side">
+            <div class="ssb-image-container">
+                <img src="{% static 'images/New_Website_Images/Keypad.png' %}" alt="Engineering Image" class="ssb-image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid single-service-block-left sol_engineering_bg_l">
+    <div class="row ssb-row">
+        <div class="col-sm-12 col-md-6 ssb-image-side">
+            <div class="ssb-image-container">
+                <img src="{% static 'images/Compressed/Photo_17_Compressed.jpg' %}" alt="Engineering Image" class="ssb-image">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 ssb-text-side text-center">
+            <div class="ssb-text-container">
+                <h3 class="ssb-title-sm">Intruder and Hold-Up Alarm Systems</h3>
+                <div class="ssb-title-underline"></div>
+                <h5 class="ssb-text">We work with industry leading brands of intruder equipment, including the following: Texecom, Honeywell Galaxy, Pyronix, Risco, Scantronic, CQR, Bt Redcare and Terrier SC
+                </h5>
+                <a class="ssb-link-left" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid service-carousel-left sol_engineering_bg_l">
+    <div class="row sc-row">
+        <div class="col-sm-12 col-md-6 sc-image-side">
+            <div class="sc-image-container">
+                <div class="sc-image-slides">
+                    <div class="image-slide">
+                        <img src="{% static 'images/New_Website_Images/Photo_24_Compressed.jpg' %}" alt="Guarding Image" class="sc-image">
+                    </div>
+                    <div class="image-slide">
+                        <img src="{% static 'images/New_Website_Images/Engineering.png' %}" alt="Guarding Image" class="sc-image">
+                    </div>
+                    <div class="image-slide">
+                        <img src="{% static 'images/New_Website_Images/samcom.jpg' %}" alt="Guarding Image" class="sc-image">
+                    </div>
+                    <div class="image-slide">
+                        <img src="{% static 'images/New_Website_Images/Engineering.png' %}" alt="Guarding Image" class="sc-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 sc-text-side text-center">
+            <div class="sc-text-container">
+                <div class="sc-text-slides">
+                    <div class="sc-text-slide">
+                        <h3 class="sc-title-sm">Access Control Systems</h3>
+                        <div class="sc-title-underline"></div>
+                        <h5 class="sc-text-sm">We offer a range of solutions to control access and egress to your premises, including Electronic Access Control,
+                            Door Entry and Remote Open/Close. Electronic access control is a secure, convenient and flexible way of
+                            controlling who has access, and when to a property, building or room. An EAC System uses electric locks, a card/ biometric reader
+                            and access control tokens (such as keycards or keyfobs). The system can be integrated with other security systems including Fire Alarms,
+                            Intruder Alarms and VSS/CCTV. We can provide EAC systems wuth a full audit trial of access events. 
+                        </h5>
+                        <a class="sc-link-right" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="sc-text-slide">
+                        <h3 class="sc-title">Door Entry</h3>
+                        <div class="sc-title-underline"></div>
+                        <h5 class="sc-text-sm">Door Entry. Door entry allows you to validate a visitor at your entry panel / intercom before you grant them acces via
+                            an internal monitor, handset or telephone. A door entry system can be linked to an existing Access Control Sytem or be used standalone.
+                            It can also be linked to your Car Park Gate through automation.
+                        </h5>
+                        <a class="sc-link-right" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="sc-text-slide">
+                        <h3 class="sc-title-sm">Remote Open/Close</h3>
+                        <div class="sc-title-underline"></div>
+                        <h5 class="sc-text-sm">As opposed to simply relying on traditional methods wherby an appointed staff member is responsible for locking up the
+                            property at the end of the day and opening the next morning, clients can now pass on the responsibility to us through the use of remote open and close.
+                            Performed by our fully qualified control room personnel, located within our high security Alarm Recieving Centre/Remote Video Response Centre (ARC/RVRC),
+                            we can lock/unlock your premises, raise/drop any electric shutters and set/unset your alarm system, whilst monitoring a live feed from your VSS System. 
+                            Clients can reap the many benefits of remote openand close services - eradication lone worker issues and provide substantial cost savings
+                            and carbon footprint reduction compared to manned building lockup as no vehicle attendance or transport is neccessary.
+                        </h5>
+                        <a class="sc-link-right" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="sc-text-slide">
+                        <h3 class="sc-title-sm">Access Control Systems</h3>
+                        <div class="sc-title-underline"></div>
+                        <h5 class="sc-text-sm">Remote Access Control allows us to schedule the opening and closing of your buildings whilst also allowing flexibility
+                            for the unexpected, whether that's an engineering attending or a late stay, your buildings are avaliable to all the right people at the right time for you. 
+                            As an SSAIB-certificated provider, we continually demonstrate confidence in the design, installation and maintenance of compliant
+                            Access Control Sytems. We work with industry leading brands of equipment, including the following: Paxton, PAC, Sensor Access, Bell Systems,
+                            BPT, CDVI, HID, Impro, 3E, Videx
+                        </h5>
+                        <a class="sc-link-right" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sc-controller"><span class="btn-prev"><i class="fas fa-chevron-left sc-left"></i></span><span class="btn-next"><i class="fas fa-chevron-right sc-right"></i></span></div>
+</div>
+
+
+<div class="container-fluid single-service-block-left sol_engineering_bg_l">
+    <div class="row ssb-row">
+        <div class="col-sm-12 col-md-6 ssb-image-side">
+            <div class="ssb-image-container">
+                <img src="{% static 'images/Compressed/Photo_17_Compressed.jpg' %}" alt="Engineering Image" class="ssb-image">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 ssb-text-side text-center">
+            <div class="ssb-text-container">
+                <h3 class="ssb-title-sm">Energy Management</h3>
+                <div class="ssb-title-underline"></div>
+                <h5 class="ssb-text">Through the use of advanced sensing technology, we can control, monitor and contain your energy usage.
+                    Cost saving capacity and green practices are at the centre of this approach to facilities management. Reducing energy output
+                    in unused spaces and your carbon footprint.
+                </h5>
+                <a class="ssb-link-left" href="#Enquire">SPEAK WITH AN EXPERT <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container client-carousel">
+    <div class="client-container">
+        <img src="{% static 'images/Cli_logo/Ambition - Sefton.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Associates of Cape Cod.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/B_M.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Blackburne House.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Broughton Hall HS.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Cardinal Heenan HS.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Chavasse Court Chambers.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Clarke Energy.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Goodman Grant.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/James Murray.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Kirkby Signs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Life Rooms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Life Science.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Marshall Property.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Mersey Care.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Mersey Youth Association.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/North Liv Academy.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/SUEZ.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Trak.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Ambition - Sefton.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Associates of Cape Cod.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/B_M.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Blackburne House.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Broughton Hall HS.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Cardinal Heenan HS.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Chavasse Court Chambers.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Clarke Energy.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Cobalt House.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Goodman Grant.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/James Murray.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Kirkby Signs.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Lakeside School.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Life Rooms.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Life Science.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Marshall Property.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Mersey Youth Association.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/North Liv Academy.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Bord na Mona.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Potter Space.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Northwood.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/LCP.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Triton.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Betsi Cadwaller.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Knowsley Council.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Birmingham City Council.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/NHS Warrington.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/NHS Southport _ Ormskirk.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/NHS Property Services.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Liverpool City Council.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/NHS Bolton.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/CHP.png' %}" alt="accreditation" class="cred">
+        <img src="{% static 'images/Cli_logo/Mersey Care.png' %}" alt="accreditation" class="cred">
+    </div>
+</div>
+
+<div class="enquiry-container" id="Enquire">
+    <div class="row justify-content-around">
+        <div class="col-sm-12 col-md-6 enquiry-form">
+            <form method="post" class="pt-5" id="enquiryForm">
+                <h1 class="pb-4 text-center"> Leave us a message and let us know how we can help you, one of our experts be in touch to discuss your requirements.</h1>
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="button-result">
+                    <button type="submit" class="btn btn-lg btn-primary mt-4 mb-4" id="enquirySubmit">Submit</button><div class="success-display">Enquiry received ! We will be in touch soon.</div><div class="failed-display">Enquiry failed, please try again or give us a call.</div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-6 service-options">
+            <div class=" col-12 col-xs-12 col-sm-5 col-md-12 col-lg-12">
+                <div class="serv-banner">
+                    <a href="{% url 's_guards' %}">
+                        <img src="{% static 'images/Widgets/Service Banners/Guarding banner.png' %}" alt="guarding" class="banner">
+                    </a>
+                </div>
+                <div class="serv-banner">
+                    <a href="{% url 's_monitoring' %}">
+                        <img src="{% static 'images/Widgets/Service Banners/Minitoring banner.png' %}" alt="guarding" class="banner">
+                    </a>
+                </div>
+                <div class="serv-banner">
+                    <a href="{% url 's_keymanagement' %}">
+                        <img src="{% static 'images/Widgets/Service Banners/Key Managment banner.png' %}" alt="guarding" class="banner">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-5 col-md-12 col-lg-12">
+                <div class="serv-banner">
+                    <a href="{% url 's_engineering' %}">
+                        <img src="{% static 'images/Widgets/Service Banners/Engineering banner.png' %}" alt="guarding" class="banner">
+                    </a>
+                </div>
+                <div class="serv-banner">
+                    <a href="{% url 's_helpdesk' %}">
+                        <img src="{% static 'images/Widgets/Service Banners/Helpdesk banner.png' %}" alt="guarding" class="banner">
+                    </a>
+                </div>
+                <div class="serv-banner">
+                    <a href="{% url 's_professional' %}">
+                        <img src="{% static 'images/Widgets/Service Banners/Professional banner.png' %}" alt="guarding" class="banner">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid new-news">
+    <div class="row news-row justify-content-around">
+        {% for article in articles %}
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-4 col-xxl-4 news-wrapper">
+                <div class="news">
+                    <a href="{% url 'article' article.id %}">
+                        <div class="news-image-container">
+                            <img src="{{ article.image_main.url }}" alt="Career Image" class="news-image">
+                        </div>
+                        <div class="news-info">
+                            <div class="news-title text-center">
+                                <h4>{{ article.title }}</h4>
+                            </div>
+                            <div class="news-sub">
+                                <p>{{ article.heading }}</p>
+                            </div>
+                        </div>
+                        <div class="mob-news-info">
+                            <div class="mob-news-title text-center">
+                                <h4>{{ article.title }}</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="news-link text-center">
+        <a href="{% url 'news' %}">See more content <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+
+{% endblock content %}

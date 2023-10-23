@@ -1,0 +1,332 @@
+.about-header {
+    margin-top: $nav-height;
+    height: 75vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.about-header-text {
+    @include centered;
+    position: absolute;
+    z-index: 5;
+    top: 15%;
+    color: $background;
+    font-size: 6rem;
+    font-weight: 400;
+    color: $background;
+    width: fit-content;
+}
+
+.about-img {
+    width: 100%;
+    transform: translate(0px, -20%);
+}
+
+.page-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: color.adjust($red_background, $lightness: +1%);
+    height: 4rem;
+    overflow: hidden;
+}
+
+.about-nav {
+    width: fit-content;
+    text-align: center;
+    cursor: pointer;
+}
+
+.selected-nav {
+    background: $red_background;
+    box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px $shadow, -12px 0 15px -4px $shadow;
+}
+
+.about-nav > a {
+    text-decoration: none;
+    color: $background;
+}
+
+.about-nav > a > h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: $background;
+    line-height: 4rem;
+    transition: font-size 0.2s linear;
+}
+
+.about-nav > a > h3:hover {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.about-content-block {
+    display: block;
+}
+
+.about-content-block > h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 2rem 0rem 0.5rem 0rem;
+}
+
+.about-underline {
+    border-bottom: 3px solid $red_background;
+    width: 33%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+}
+
+.bb {
+    margin: 6rem 0px;
+}
+
+.bb > .col-6{
+    height: fit-content;
+    align-self: center;
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.bb-text-left {
+    height: fit-content;
+    position: relative;
+}
+
+.bb-text-left > .row {
+    width: 100%;
+    height: fit-content;
+}
+
+.bb-center-text {
+    height: fit-content;
+    margin-right:auto;
+    margin-left: auto;
+    width: 80%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bb-center-text > h3 {
+    @include default-font;
+    font-size: 2.2rem;
+}
+
+.bb-tl-text {
+    height: fit-content;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+.bb-tr-text {
+    height: fit-content;
+    width: 90%;
+    padding-right: 3rem;
+    text-align: center;
+}
+
+.bb-tl-text > h3{
+    @include default-font;
+    font-size: 2rem;
+}
+
+.bb-tr-text > h3{
+    @include default-font;
+    font-size: 1.8rem;
+}
+
+.bb-image {
+    overflow: hidden;
+    // border-radius: 10px;
+    // box-shadow: 0px 0px 20px 0px $shadow;
+    padding: 0px;
+    height: fit-content;
+}
+
+.bb-img {
+    width: 100%;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.accreditation-image-container {
+    width: fit-content;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px $shadow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+}
+
+.accreditation-image {
+    max-height: 70vh;
+
+}
+
+.service-logo-nav {
+    height: 50vh;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+.service-logo-nav > .row {
+    height: 100%;
+    width: 100%;
+}
+
+.sl-links {
+    height: 100%;
+    padding-top: 3rem;
+}
+.service-logo-link {
+    height: 33%;
+    width: 100%;
+    text-align: center;
+}
+
+.service-logo-link > a {
+    text-decoration: none;
+    color: $font-dark;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.service-logo-link > a > h3 {
+    text-decoration: none;
+    color: $font-dark;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    transition: font-size 0.2s;
+}
+
+.service-logo-link > a > h3:hover {
+    font-size: 2.9rem;
+}
+
+.service-logo {
+    position: relative;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.service-logo > img {
+    width: 100%;
+}
+
+#sl-full {
+    display: block;
+}
+
+#sl-guarding {
+    display: none;
+}
+
+#sl-monitoring {
+    display: none;
+}
+
+#sl-helpdesk {
+    display: none;
+}
+
+#sl-engineering {
+    display: none;
+}
+
+#sl-key {
+    display: none;
+}
+
+#sl-professional {
+    display: none;
+}
+
+.sl-guard-bg {
+    background: radial-gradient(at bottom right, rgba(255,255,255,1) 65%, rgba(220,28,35,1) 100%);
+}
+
+.sl-mon-bg {
+    background: radial-gradient(at right, rgba(255,255,255,1) 65%, rgba(27,64,132,1) 100%);
+}
+
+.mob-bb-img {
+    display: none;
+}
+
+.dt-bb-img {
+    display: block;
+}
+
+
+// background: linear-gradient(315deg, rgba(255,255,255,1) 58%, rgba(220,28,35,1) 90%);
+
+@media (max-width: 1000px) {
+    .about-header-text {
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+    }
+    .about-header {
+        height: 25vh
+    }
+    .page-div {
+        justify-content: space-between;
+    }
+    .about-nav > a > h3 {
+        font-size: 1.2rem;
+    }
+    .about-nav > a > h3:hover {
+        font-size: 1.2rem;
+        font-weight: inherit;
+    }
+    .bb-center-text {
+        width: 100%;
+    }
+    .bb-center-text > h3 {
+        font-size: 1.7rem;
+    }
+    .bb-tl-text {
+        width: 100%;
+    }
+    .bb-tl-text > h3 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .mob-bb-img {
+        display: block;
+    }
+    .dt-bb-img {
+        display: none;
+    }
+    .bb-image {
+        margin: 3rem 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-content-block > h1 {
+        font-size: 2rem;
+    }
+    .about-header-text {
+        font-size: 2rem;
+    }
+    .accreditation-image {
+        width: 90vw;
+    }
+    .bb {
+        margin: 3rem 0px;
+    }
+}

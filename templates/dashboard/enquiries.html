@@ -1,0 +1,33 @@
+{% extends '_dashbase.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <th>Name</th>
+                    <th>Contact Number</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                </thead>
+                <tbody>
+                    {% for enquiry in enquiries %}
+                        <tr>
+                            <td>{{ enquiry.name }}</td>
+                            <td>{{ enquiry.contact_number }}</td>
+                            <td>{{ enquiry.email }}</td>
+                            <td>{{ enquiry.message }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}
