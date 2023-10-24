@@ -24,6 +24,9 @@ services:
             - "AWS_ACCESS_KEY_ID=AKIARCAQHQ5ILFRGVVP5"
             - "AWS_SECRET_ACCESS_KEY=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"
             - "AWS_STORAGE_BUCKET_NAME=samson-static-1319"
+            - "EMAIL_HOST_USER=jamie.appleyard@samsonsecurity.co.uk"
+            - "EMAIL_HOST_PASSWORD=Samson123!"
+            - "DEFAULT_FROM_EMAIL=jamie.appleyard@samsonsecurity.co.uk"
     db:
         image: postgres:11
         volumes:

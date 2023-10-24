@@ -165,10 +165,10 @@ AUTHENTICATIONS_BACKENDS = (
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.office365.com'
-EMAIL_HOST_USER = 'jamie.appleyard@samsonsecurity.co.uk'
-EMAIL_HOST_PASSWORD = 'Samson123!'
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
-DEFAULT_FROM_EMAIL = 'jamie.appleyard@samsonsecurity.co.uk'
+DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 CRISPY_CLASS_CONVERTERS = {
