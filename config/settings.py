@@ -140,7 +140,7 @@ if USE_S3 == True:
 
 else:
     STATIC_URL = '/static/'
-    STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
+    STATIC_ROOT = str(BASE_DIR.joinpath('static'))
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
