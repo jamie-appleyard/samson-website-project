@@ -53,7 +53,7 @@ class TrainingInterestAdmin(admin.ModelAdmin):
         'course'
     )
 
-admin.site.register(Career, CareersAdmin,)
+admin.site.register(Career, CareersAdmin)
 admin.site.register(JobApplication, ApplicationAdmin)
 admin.site.register(TrainingInterest, TrainingInterestAdmin)
 
