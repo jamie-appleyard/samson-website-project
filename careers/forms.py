@@ -5,6 +5,7 @@ from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Fieldset, ButtonHolder, Div, Submit, HTML, Field
 from crispy_forms.bootstrap import InlineCheckboxes
 
+#Model form tied to the JobApplication Model, utilising crispy forms tools to customise this form in detail
 class ApplicationForm(forms.ModelForm):
         def __init__(self, *args, **kwargs):
                 super().__init__(*args, **kwargs)
@@ -136,13 +137,15 @@ class ApplicationForm(forms.ModelForm):
                         'working_history' : 'I can provide a 5 year working history'
                 }     
         
-
+#Model Form for listing a new vacancy through the dashboard
 class NewVacancyForm(forms.ModelForm):
         class Meta:
                 model = Career
                 exclude = ['job_apply_by_date', 'job_date_posted',
                 'job_posted_by', 'number_of_applications']
-    
+
+#Model Form to allow visitors to the site to register their interest in training with Samson, leaving their details so that they can
+#be contacted at a later date.
 class TrainingInterestForm(forms.ModelForm):
         def __init__(self, *args, **kwargs):
                 super().__init__(*args, **kwargs)

@@ -7,12 +7,15 @@ from news.forms import ArticleForm
 from pages.models import Enquiry
 from django.http import HttpResponse
 
+#Function based view for the dashboard home page
 def dashboard_view(request):
     if request.user.is_authenticated:
         return render(request, 'dashboard/mandash.html')
     else:
         return redirect('login')
 
+# Function based view under 'Recruitment' to allow the user to post vacancies using the NewVacancyForm and review the 
+# status of existing vacancies listed with links to view applications made
 def vacancy_tab(request):
     if request.user.is_authenticated:
         careers = Career.objects.all()
@@ -35,6 +38,7 @@ def vacancy_tab(request):
     else:
         return redirect('login')
 
+# Function based view that renders a list of applications made for a particular role with links to view each application in more detail
 def applications_view(request, pk):
     if request.user.is_authenticated:
         queryset = JobApplication.objects.filter(job_reference__pk=pk)
@@ -45,6 +49,7 @@ def applications_view(request, pk):
     else:
         return redirect('login')
 
+#Function based view to see the details of an individuals application
 def applicant_view(request, pk):
     if request.user.is_authenticated:
         applicant = JobApplication.objects.get(pk=pk)
@@ -55,6 +60,7 @@ def applicant_view(request, pk):
     else:
         return redirect('login')
 
+#Function based view to pass article info to display live and draft articles
 def news_room(request):
     if request.user.is_authenticated:
         previous = Article.objects.filter(status=0)
@@ -87,6 +93,7 @@ def news_room(request):
     else:
         return redirect('login')
 
+#Function based view to edit individual news article objects
 def news_editor(request):
     if request.user.is_authenticated:
         if request.method == 'POST':
@@ -131,6 +138,7 @@ def news_update(request, pk):
     else:
         return redirect('login')
 
+#Function based view to see/display the information from enquiries that have come through form visitors to the site and the enquiry form.
 def enquiries_view(request):
     if request.user.is_authenticated:
         enquiries = Enquiry.objects.all()

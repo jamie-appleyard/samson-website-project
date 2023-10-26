@@ -154,7 +154,34 @@ $("#aSelect li").click(function() {
     var q = $("#q-dropdown").text();
 });
 
+$(".service-logo-link a h3").hover(function() {
+    var logo = $(this).attr("attr")
+    $("#sl-full").toggle()
+    $("#" + logo).toggle()
+}, function() {
+    var logo = $(this).attr("attr")
+    $("#" + logo).toggle()
+    $("#sl-full").toggle()
+});
+
+//Functionality for the control of the about section on the home page
 var sec_position = 1
+
+var secSelector = function(selector) {
+    var Number = parseInt(selector.id[4]);
+    var newSec = (selector.id[4]);
+    if (sec_position == Number) {
+        sec_position == Number;
+    }
+    else {
+        var prevSec = sec_position.toString();
+        $("#sel-" + prevSec).toggleClass('current');
+        $("#sec-" + prevSec).toggleClass("about-module-hidden");
+        sec_position = Number;
+        $("#sel-" + newSec).toggleClass('current');
+        $("#sec-" + newSec).toggleClass('about-module-hidden');
+        }
+}
 
 $(function (){
     $("#sec-" + sec_position.toString()).toggleClass("about-module-hidden");
@@ -196,25 +223,12 @@ $("#selRight").click(function() {
     };
 })
 
-var secSelector = function(selector) {
-    var Number = parseInt(selector.id[4]);
-    var newSec = (selector.id[4]);
-    if (sec_position == Number) {
-        sec_position == Number;
-    }
-    else {
-        var prevSec = sec_position.toString();
-        $("#sel-" + prevSec).toggleClass('current');
-        $("#sec-" + prevSec).toggleClass("about-module-hidden");
-        sec_position = Number;
-        $("#sel-" + newSec).toggleClass('current');
-        $("#sec-" + newSec).toggleClass('about-module-hidden');
-        }
-}
 
+//Functionality for controlling the unfolding service logo widgets on the home page
 $(function() {
     $("#guardingWidget").trigger("click");
 });
+
 
 $(".widget-container").click(function() {
     if ($(this).hasClass("expanded")) {
@@ -263,7 +277,7 @@ var Reverse = function(selector) {
 }
 
 
-
+// Functionality for controlling the info and image slides on the service pages
 var num_slides = $(".sc-text-slides").first().children().length
 var max_deviation = (num_slides * 100 - 100)
 var current_deviation = 0
@@ -373,6 +387,8 @@ $(".btn-prev").click(function() {
     }
 });
 
+
+// Functionality for controlling the movement of accrediation images and previous clients
 var credsCarousel = function(creds) {
     $(creds).animate({
         left : "-500%"}, 120000, 'linear')
@@ -386,6 +402,7 @@ var clientCarousel = function(creds) {
 credsCarousel(".creds-container");
 clientCarousel(".client-container");
 
+//Functionality for handling enquiry form submission on service pages via AJAX and displaying success message
 $(document).ready(function() {
     var solutionEnquiry = $(".enquiry-form")
     var solutionSuccess = $(".success-display")
@@ -450,6 +467,9 @@ $(".prev-news-row").on({
     }
 }, ".news-page");
 
+// JS functionality attached to the load more button across pages where article section is included to allow the user to load in
+// more articles, data collected from the attributes of the button HTML for ajax request, button controlled throughout to stop
+// user from overpressing. Button functionaility removed when article limit reached.
 $(".load-more-button").click(function() {
     var current_total = $(".news-page").length
     var data_limit = $(this).attr('data-limit');
@@ -475,30 +495,7 @@ $(".load-more-button").click(function() {
     })
 })
 
-// var aboutNav = $(".about-nav")
-// var aboutNavCon = '#whoweare'
-
-// $(".about-nav").click(function() {
-//     console.log('triggered')
-//     $(aboutNav).removeClass('selected-nav');
-//     $(aboutNavCon).toggle();
-//     $(this).addClass("selected-nav");
-//     var id = "#" + $(this).attr("id").slice(0, -4);
-//     $(id).toggle();
-//     aboutNav = $(this)
-//     aboutNavCon = id
-// })
-
-// function aboutTabChange(id) {
-//     console.log('triggered')
-//     $(aboutNav).removeClass('selected-nav');
-//     $(aboutNavCon).toggle();
-//     $(this).addClass("selected-nav");
-//     $(id).toggle();
-//     aboutNav = $(this)
-//     aboutNavCon = id
-// }
-
+// Functionality for giving visual indicator on the application that the selected ID is sufficent for vetting
 var groupASelected = 0
 var groupBSelected = 0
 var groupARequired = 2
@@ -584,6 +581,7 @@ $(".sia_badges div .custom-control").on("click", "input", function() {
     }
 });
 
+// Functionality for application form validation, submission via AJAX and success message
 $(document).ready(function() {
 
     var applicationForm = $("#applicationForm")
@@ -672,6 +670,7 @@ $(document).ready(function() {
     });
 });
 
+// Functionality for training form submission via AJAX and success message
 $(document).ready(function() {
     var TrainingForm = $("#TrainingInterestForm")
     var trainingSubmit = $(".ti-submit-success")
@@ -718,6 +717,8 @@ $(document).ready(function() {
     })
 });
 
+
+// Functionality for enquiry form submission via AJAX and success message rendering
 $(document).ready(function() {
     var form = $("#EnquiryForm")
 
@@ -762,14 +763,4 @@ $(document).ready(function() {
             processData: false,
         });
     });
-});
-
-$(".service-logo-link a h3").hover(function() {
-    var logo = $(this).attr("attr")
-    $("#sl-full").toggle()
-    $("#" + logo).toggle()
-}, function() {
-    var logo = $(this).attr("attr")
-    $("#" + logo).toggle()
-    $("#sl-full").toggle()
 });

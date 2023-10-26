@@ -130,6 +130,7 @@
             </tr>
         </thead>
         <tbody>
+            {% comment %} for the interative rendering of individual vacancies inside this table {% endcomment %}
             {% for career in careers %}
                 <tr>
                     <td>{{ career.job_title }}</td>
@@ -147,6 +148,7 @@
     </table>
 </div>
 
+{% comment %} mobile only vacancies rendering {% endcomment %}
 <div class="mob-career-block container-fluid mb-5 mt-5 text-center" id="vacancies">
     <h1 class="career-block-title">Current Vacancies</h1>
     <div class="underline"></div>
@@ -173,6 +175,7 @@
     </table>
 </div>
 
+{% comment %} where the training request form lives at the bottom of the page {% endcomment %}
 <div class="training-block container-fluid pt-5" id="training">
     <div class="row">
         <h1 class="training-block-title">Training</h1>

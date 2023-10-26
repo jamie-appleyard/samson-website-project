@@ -8,6 +8,8 @@ from multiselectfield import MultiSelectField
 import datetime
 from datetime import timedelta
 
+
+#Model for the information behind a particular job listing
 class Career(models.Model):
     job_title = models.CharField(max_length=200)
     job_summary = models.CharField(max_length=500)
@@ -57,10 +59,7 @@ class Career(models.Model):
     def get_absolute_url(self):
         return reverse('vacancy')
 
-# def user_directory_path(instance, filename):
-#     return 'user_{0}/{1}'.format(instance.user.id, filename)
-# A way to create more informative file names for uploads
-
+#Model for the application form, collecting all applicant information (pre-vetting) for initial screening purposes.
 class JobApplication(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
@@ -144,6 +143,7 @@ class JobApplication(models.Model):
     def __str__(self):
         return str(self.id)
 
+#Model to collect the data for those interested in taking training with us so that they can be contacted when appropriate
 class TrainingInterest(models.Model):
     name = models.CharField(max_length=50)
     email = models.EmailField()

@@ -1,5 +1,6 @@
 from django.db import models
 
+#Custom model for article data storage, including status of article, featured status, and editing tracking
 class Article(models.Model):
     title = models.CharField(max_length=55, blank=True)
     heading = models.CharField(max_length=200, blank=True)

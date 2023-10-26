@@ -6,6 +6,9 @@ from django.http import HttpResponse, JsonResponse
 from django.template.context_processors import csrf
 from crispy_forms.utils import render_crispy_form
 
+
+#Function based view for the rendering of the careers page and the training interest form at the foot of the page, data from form
+#submitted via ajax to database, some control in between in JS.
 def careers_page(request):
     form = TrainingInterestForm(request.POST or None)
     model = Career
@@ -26,6 +29,9 @@ def careers_page(request):
     else:       
         return render(request, 'careers/careers.html', context)
 
+
+#Funciton based view for the application form page, submitting the application form to the database through AJAX, checking
+#for form validation
 def apply_view(request, pk):
     context = {}
     career = Career.objects.get(id = pk)

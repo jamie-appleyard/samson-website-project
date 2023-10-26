@@ -5,6 +5,8 @@ from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Fieldset, ButtonHolder, Div, Submit, HTML, Field
 from crispy_forms.bootstrap import InlineCheckboxes
 
+
+# Enquiry form built out using crispy form layout tools for added customisation.
 class EnquiryForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
                 super().__init__(*args, **kwargs)

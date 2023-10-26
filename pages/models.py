@@ -1,5 +1,6 @@
 from django.db import models
 
+# Model defining data, types and restrcitions for enquiry submissions
 class Enquiry(models.Model):
     name = models.CharField(max_length=200)
     contact_number = models.CharField(max_length=11)

@@ -3,13 +3,14 @@ from .forms import EnquiryForm
 from news.models import Article
 from django.http import JsonResponse
 
-
+#view function for the return of the home page and news article loading
 def home_view(request):
     articles = Article.objects.filter(status=0).order_by('-id')
     last_three = articles[:3]
     context = {'articles' : last_three,}
     return render(request, 'home.html', context)
 
+#view function for the return of the contact us page and enquiry form functionality
 def contact_view(request):
     form = EnquiryForm()
     if request.method == 'POST':
@@ -22,6 +23,7 @@ def contact_view(request):
     else:
         return render(request, 'contact.html', context={'form' : form})
 
+#view function for the return of solutions pages and enquiry form functionality
 def solutions_page(request, url_name, template):
     articles = Article.objects.filter(status=0).order_by('-id')
     last_three = articles[:3]
@@ -39,7 +41,7 @@ def solutions_page(request, url_name, template):
     else:
         return render(request, template, context)
 
-
+#view functions for the individiual services pages taking advantage of the base solutions page function
 def solution_guarding(request):
     return solutions_page(request, 's_guards', 'solutions/s_guarding.html')
 
